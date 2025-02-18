@@ -1,0 +1,746 @@
+﻿
+@{
+    ViewBag.Title = "AssessmentSheet";
+    Layout = null;
+    //List<m2ostnextservice.Models.APIBrief> brfList = (List<m2ostnextservice.Models.APIBrief>)ViewData["brfList"];
+    m2ostnextservice.Models.BriefResource brief = (m2ostnextservice.Models.BriefResource)ViewData["brief"];
+    List<m2ostnextservice.Models.BriefChart> right = (List<m2ostnextservice.Models.BriefChart>)ViewData["right"];
+    List<m2ostnextservice.Models.BriefChart> wrong = (List<m2ostnextservice.Models.BriefChart>)ViewData["wrong"];
+
+
+    string right_string = "";
+
+    bool cflag = true;
+    int k = 1;
+    //string[] color_array = { "#f47a42", "#f7be42", "#eff241", "#b8f23c", "#3ae83f", "#38e290", "#36c0d8", "#328cdb", "#2d44d8", "#612fd6", "#892bd1", "#bd2ad3", "#d129af", "#ce275c", "#cc282e", "#27b8cc", "#555626", "#587a56", "#9bc9bc", "#747396", "#603860" };
+
+    string[] color_array_hardcode = { "#f9d977", "#cfddf3", "#d7bdda" };
+
+    if (brief.RESULTSTATUS == 1)
+    {
+        right_string = "<pie-chart>";
+        foreach (var itm in right)
+        {
+        }
+
+        right_string = right_string + "</ pie-chart > ";
+    }
+
+    int uid = (int)ViewData["UID"];
+    int oid = (int)ViewData["OID"];
+    int ACID = (int)ViewData["ACID"];
+    string bkclr = "#f47a42";
+    int BTileId = (int)ViewData["BTileId"];
+
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>multiple choices</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <link href="~/Content/WebView/Assessment/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            font: 13px Arial, Helvetica, sans-serif;
+        }
+
+        .tophead {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+        }
+
+        .topheadinner {
+            width: 100%;
+            background: #FC0;
+            position: fixed;
+            z-index: 1;
+            float: left;
+            top: 0px;
+        }
+
+        .topheadtext {
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+        }
+
+            .topheadtext a {
+                color: #000;
+                text-decoration: none;
+            }
+
+                .topheadtext a:hover {
+                    color: #666;
+                    text-decoration: none;
+                }
+
+        .questionsbody {
+            width: 100%;
+            margin: 0 auto;
+            margin-top: 47px;
+            position: relative;
+        }
+
+        .questionsbodyinner {
+            width: 94%;
+            background: #FFF;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 14px;
+            color: #000;
+        }
+
+            .questionsbodyinner p {
+                margin: 0 auto;
+                text-align: left;
+                font-size: 14px;
+                color: #000;
+            }
+
+        table tr td {
+            border: 0px;
+            padding: 0px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 5px 2px;
+        }
+
+
+        /***********************/
+        .question_tablecolor {
+            width: 96%;
+            border-radius: 8px;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding: 5px;
+            box-shadow: 0 0 3px 3px #a09e9c;
+            line-height: 25px;
+            font-size: 17px;
+        }
+
+        .question_tablebtn {
+            border: 0px;
+            background: #ffc000;
+            box-shadow: 2px 2px #b5b9c5;
+            padding: 10px 30px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .scoredshadow {
+            position: relative;
+            -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+        }
+
+            .scoredshadow:before, .scoredshadow:after {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                -webkit-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+                -moz-box-shadow: 0 0 20px rgba(0,0,0,0.8);
+                box-shadow: 0 0 20px rgba(0,0,0,0.8);
+                top: 10px;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                -moz-border-radius: 100px / 10px;
+                border-radius: 100px / 10px;
+            }
+
+            .scoredshadow:after {
+                right: 10px;
+                left: auto;
+                -webkit-transform: skew(8deg) rotate(3deg);
+                -moz-transform: skew(8deg) rotate(3deg);
+                -ms-transform: skew(8deg) rotate(3deg);
+                -o-transform: skew(8deg) rotate(3deg);
+                transform: skew(8deg) rotate(3deg);
+            }
+    </style>
+</head>
+
+<body>
+    <div class="tophead">
+        <div class="topheadinner">
+            <div class="topheadtext">
+                Assessments
+            </div>
+        </div>
+
+        <div class="questionsbody">
+            <div class="questionsbodyinner">
+                @*----------Question---------------*@
+                @if (brief.QTNLIST != null && brief.QTNLIST.Count > 0)
+                {
+                    using (Html.BeginForm("AssessmentResult", "Dashboard", FormMethod.Post, new { id = "assessment_form_" + brief.BRIEF.brief_code }))
+                    {
+
+                        <input type="hidden" value="@brief.QTNLIST.Count" id="qtn_count_@brief.BRIEF.brief_code" name="qtn_count_@brief.BRIEF.id_brief_master" />
+
+                        <input type="hidden" id="id_brief_master_@brief.BRIEF.brief_code" value="@brief.BRIEF.id_brief_master" name="brf_id" />
+                        <input type="hidden" value="@brief.BRIEF.brief_code" name="brfcode" />
+
+                        <input type="hidden" value="@uid" name="UID" />
+
+                        <input type="hidden" value="@oid" name="OID" />
+                        <input type="hidden" value="@ACID" name="ACID" />
+                        <input type="hidden" value="@BTileId" name="BTileId" />
+
+
+
+                        foreach (var itm in brief.QTNLIST)
+                        {
+                            if (itm.question_complexity == 1)
+                            {
+                                bkclr = color_array_hardcode[0];
+                            }
+                            else if (itm.question_complexity == 10)
+                            {
+                                bkclr = color_array_hardcode[1];
+                            }
+                            else if (itm.question_complexity == 20)
+                            {
+                                bkclr = color_array_hardcode[2];
+                            }
+
+                            <table class="question_tablecolor" style="background:@bkclr;">
+                                <tr>
+                                    <td width="20" valign="top"><strong>Q:</strong></td>
+                                    <td>
+                                        @if (itm.question.question_theme_type == 1)
+                                        {
+                                            @itm.question.brief_question
+
+
+                                        }
+                                        else if (itm.question.question_theme_type == 2)
+                                        {
+                                            if (itm.question.question_choice_type == 1)
+                                            {
+                                                @itm.question.brief_question
+
+                                            }
+                                            else if (itm.question.question_choice_type == 2)
+                                            {
+
+                                                <img style="width:95%;" src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/question/@itm.question.question_image" />
+
+                                            }
+                                            else if (itm.question.question_choice_type == 3)
+                                            {
+
+                                                @itm.question.brief_question<br />
+                                                <img style="width:95%;" src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/question/@itm.question.question_image" />
+                                            }
+                                        }
+
+
+                                    </td>
+                                </tr>
+
+
+                                @foreach (var obj in itm.answers)
+                                {
+
+                                    if (itm.question.question_theme_type == 1)
+                                    {
+                                        <tr>
+                                            <td valign="top">
+
+                                                <input type="radio" style="width:20px; height:20px;" name="qna_@brief.BRIEF.id_brief_master@(k)" id="@obj.id_brief_answer" value="@(obj.id_brief_question + " | " + obj.id_brief_answer + " | " + 0)" />
+
+                                            </td>
+
+                                            <td>
+                                                @obj.brief_answer
+                                            </td>
+
+                                        </tr>
+
+
+                                    }
+                                    else if (itm.question.question_theme_type == 2)
+                                    {
+                                        if (obj.choice_type == 1)
+                                        {
+                                            <tr>
+                                                <td valign="top">
+
+                                                    <input type="radio" name="qna_@brief.BRIEF.id_brief_master@(k)" id="@obj.id_brief_answer" value="@(obj.id_brief_question + " | " + obj.id_brief_answer + " | " + 0)" style="width:20px; height:20px;" />
+
+
+                                                </td>
+
+                                                <td>
+                                                    @obj.brief_answer
+
+                                                </td>
+
+                                            </tr>
+
+
+
+
+                                        }
+                                        else if (obj.choice_type == 2)
+                                        {
+
+                                            <tr>
+                                                <td valign="top">
+
+                                                    <input type="radio" name="qna_@brief.BRIEF.id_brief_master@(k)" id="@obj.id_brief_answer" value="@(obj.id_brief_question + " | " + obj.id_brief_answer + " | " + 0)" style="width:20px; height:20px;" />
+
+
+
+                                                </td>
+
+                                                <td>
+
+                                                    <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@obj.choice_image" width="100" />
+
+
+                                                </td>
+
+                                            </tr>
+
+
+
+                                        }
+                                        else if (obj.choice_type == 3)
+                                        {
+
+                                            <tr>
+                                                <td valign="top">
+
+                                                    <input type="radio" name="qna_@brief.BRIEF.id_brief_master@(k)" id="@obj.id_brief_answer" value="@(obj.id_brief_question + " | " + obj.id_brief_answer + " | " + 0)" style="width:20px; height:20px;" />
+
+
+                                                </td>
+
+                                                <td>
+                                                    @obj.brief_answer
+                                                    <br>
+                                                    <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@obj.choice_image" width="100" />
+                                                </td>
+                                            </tr>
+                                        }
+
+
+                                    }
+
+
+
+
+
+
+                                }
+
+
+
+
+
+
+
+                            </table>
+                            k++;
+                        }
+                        <label style="padding-left: 7%;color:red;display: none" id="assessmenttakenerror" class="error">Please answer all the questions.</label>
+
+                        <button type="button" onclick="Evaluateassessment('@brief.BRIEF.brief_code')" class="question_tablebtn ass_sub_@brief.BRIEF.brief_code">Submit</button>
+
+                        <div class="ass_sub_load_@brief.BRIEF.brief_code" style="display:none">
+                            <p style="margin-left:36%;color:black"> Loading Result</p>
+                            <img style="width: 8%;margin-left:0%;height:15%" src="~/Content/images/SkinnySeveralAsianlion.gif" />
+
+                        </div>
+                    }
+                }
+
+
+
+
+                else if (brief.RESULTSTATUS == 1)
+                {
+                    <table style="width:100%; background:#d9d9d9; border-radius:5px; font-size: 20px;font-weight: bold;">
+                        <tr>
+                            <td width="45%">@brief.GameScore <img src="~/Content/WebView/images/football.png" style="width:30px; vertical-align:middle; margin:0px 5px;" /> scored</td>
+                            <td width="30px">=</td>
+                            <td>@brief.SplScore <img src="~/Content/WebView/images/jobpoint.png" style="width:30px; vertical-align:middle;" /> gained</td>
+                        </tr>
+                    </table>
+
+
+
+                    @*<div style="width:100%; border:0px; padding:0px; margin-bottom:10px;">
+                        <div class="scoredshadow" style="background:#d9d9d9; width:95%; margin:0 auto;  border-radius:8px; padding:3px;">
+                            <img src="~/Content/WebView/images/football.png" width="30" style="padding:3px; vertical-align:middle;">
+
+                            @if (brief.GameScore == 1)
+                            {
+                                <span style="line-height:30px; padding-left:10px; text-align:left; vertical-align:middle; font-size:18px;">
+
+                                    @brief.GameScore Goal Scored
+                                </span>
+                            }
+                            else
+                            {
+                                <span style="line-height:30px; padding-left:10px; text-align:left; vertical-align:middle; font-size:18px;">
+
+                                    @brief.GameScore Goals Scored
+                                </span>
+
+                            }
+
+
+
+
+
+
+                        </div>
+                    </div>*@
+
+
+
+                    foreach (var itm in brief.RESULT.briefReturn)
+                    {
+                        if (itm.question_complexity == 1)
+                        {
+                            bkclr = color_array_hardcode[0];
+                        }
+                        else if (itm.question_complexity == 10)
+                        {
+                            bkclr = color_array_hardcode[1];
+                        }
+                        else if (itm.question_complexity == 20)
+                        {
+                            bkclr = color_array_hardcode[2];
+                        }
+
+
+                        @*----------Answer----------------------------*@
+
+
+
+
+
+                        <table class="question_tablecolor" style="background:@bkclr;">
+
+
+
+                            <tr>
+                                <td>
+                                    @if (itm.id_question == null)
+                                    {
+                                        @itm.Question
+
+                                    }
+                                    else
+                                    {
+                                        if (itm.questiontheme == 1)
+                                        {
+                                            @itm.Question
+
+                                        }
+                                        else if (itm.questiontheme == 2)
+                                        {
+                                            if (itm.questionchoicetype == 1)
+                                            {
+                                                @itm.Question
+                                            }
+                                            else if (itm.questionchoicetype == 2)
+                                            {
+                                                <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/question/@itm.questionimg" style="margin:10px; width:93%;">
+
+                                            }
+                                            else if (itm.questionchoicetype == 3)
+                                            {
+                                                @itm.Question
+                                                <br />
+                                                <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/question/@itm.questionimg" style="margin:10px; width:93%;">
+
+
+                                            }
+                                        }
+                                    }
+
+
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>
+                                    <table>
+
+                                        @if (itm.id_question == null)
+                                        {
+
+                                            if (itm.is_right == 1)
+                                            {
+                                                <tr>
+                                                    <td><i class="" style="font-size:22px;"></i></td>
+                                                    <td>@itm.Answer</td>
+                                                    <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                </tr>
+                                            }
+                                            else
+                                            {
+                                                <tr>
+                                                    <td><i class="" style="font-size:22px;"></i></td>
+                                                    <td>@itm.Answer</td>
+                                                    <td><i class="fa fa-times" style="font-size:24px; color:red;"></i></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><i class="" style="font-size:22px;"></i></td>
+                                                    <td>@itm.WANS</td>
+                                                    <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                </tr>
+
+
+                                            }
+                                        }
+                                        else
+                                        {
+                                            if (itm.questiontheme == 1)
+                                            {
+                                                if (itm.is_right == 1)
+                                                {
+                                                    <tr>
+                                                        <td><i class="" style="font-size:22px;"></i></td>
+                                                        <td>@itm.Answer</td>
+                                                        <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                    </tr>
+
+
+
+                                                }
+                                                else
+                                                {
+                                                    <tr>
+                                                        <td><i class="" style="font-size:22px;"></i></td>
+                                                        <td>@itm.Answer</td>
+                                                        <td><i class="fa fa-times" style="font-size:24px; color:red;"></i></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><i class="" style="font-size:22px;"></i></td>
+                                                        <td>@itm.WANS</td>
+                                                        <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                    </tr>
+
+
+                                                }
+
+
+                                            }
+                                            else if (itm.questiontheme == 2)
+
+                                            {
+                                                if (itm.answerchoicetype == 1)
+                                                {
+                                                    if (itm.is_right == 1)
+                                                    {
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>@itm.Answer</td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>@itm.Answer</td>
+                                                            <td><i class="fa fa-times" style="font-size:24px; color:red;"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>@itm.WANS</td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+                                                    }
+
+
+                                                }
+                                                else if (itm.answerchoicetype == 2)
+                                                {
+
+                                                    if (itm.is_right == 1)
+                                                    {
+
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td><img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.answerimg" width="100" style="margin-left:10px;"></td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+
+
+
+                                                    }
+                                                    else
+                                                    {
+
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td><img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.answerimg" width="100" style="margin-left:10px;"></td>
+                                                            <td><i class="fa fa-times" style="font-size:24px; color:red;"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td><img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.wansimg" width="100" style="margin-left:10px;"></td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+
+                                                    }
+
+
+
+                                                }
+                                                else if (itm.answerchoicetype == 3)
+                                                {
+                                                    if (itm.is_right == 1)
+                                                    {
+
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>
+                                                                @itm.Answer
+                                                                <br />
+                                                                <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.answerimg" width="100" style="margin-left:10px;">
+                                                            </td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+
+
+                                                    }
+                                                    else
+                                                    {
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>
+                                                                @itm.Answer
+                                                                <br />
+                                                                <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.answerimg" width="100" style="margin-left:10px;">
+                                                            </td>
+                                                            <td><i class="fa fa-times" style="font-size:24px; color:red;"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="" style="font-size:22px;"></i></td>
+                                                            <td>
+                                                                @itm.Answer
+                                                                <br />
+                                                                <img src="https://www.skillmuni.in/SkillmuniUniversityCMSbeta/Content/SKILLMUNI_DATA/briefQuesion/@brief.BRIEF.id_organization/choice/@itm.wansimg" width="100" style="margin-left:10px;">
+                                                            </td>
+                                                            <td><i class="fa fa-check" style="font-size:24px; color:#090;"></i></td>
+                                                        </tr>
+
+
+
+                                                    }
+
+
+
+                                                }
+
+
+                                            }
+
+
+
+                                        }
+
+
+                                    </table>
+                                </td>
+                            </tr>
+
+                        </table>
+
+
+                    }
+                }
+
+
+                else
+                {
+                    <h5 style="margin-top: 18%; margin-left: 11%;color:#c24545;text-align: center; "> No questions attached to the brief </h5>
+                }
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
+
+<script>
+                function Evaluateassessment(id) {
+                    $(".ass_sub_" + id).hide();
+                    $(".ass_sub_load_" + id).show();
+                    var url = '@Url.Action("AssessmentResult", "DashboardWebView")';
+                    var count = $("#qtn_count_" + id).val();
+                    var brf_master = $("#id_brief_master_" + id).val();
+                    var flg = "0";
+                    for (var i = 1; i <= count; i++)
+                    {
+                        if (!$("input[name='" + "qna_" + brf_master + i + "']:checked").val()) {
+                            flg = "1";
+                            break;
+                        }
+                    }
+                    if (flg == "0"){
+                        $.ajax({
+                        type: 'POST',
+                        url: url,
+                        data: $('#assessment_form_' + id).serialize(),
+                        success: function(data) {
+                        location.reload();
+                        }
+                        });
+                    }
+                    else
+                    {
+                        $("#assessmenttakenerror").show();
+                        setTimeout(function() {
+                        $("#assessmenttakenerror").hide("slow");
+                        }, 3000);
+                        $(".ass_sub_" + id).show();
+                        $(".ass_sub_load_" + id).hide();
+                    }
+                }
+</script>
+
+

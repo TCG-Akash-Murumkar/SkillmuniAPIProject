@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "m2ostnextservice", "skillmuniwebservice\m2ostnextservice.csproj", "{347298A3-760E-42F7-BB0F-99DF0790AEAA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{347298A3-760E-42F7-BB0F-99DF0790AEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{347298A3-760E-42F7-BB0F-99DF0790AEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{347298A3-760E-42F7-BB0F-99DF0790AEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{347298A3-760E-42F7-BB0F-99DF0790AEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+		SolutionGuid = {DADE2E65-6EF9-4A88-917D-BB424993383A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{347298A3-760E-42F7-BB0F-99DF0790AEAA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>m2ostnextservice</RootNamespace>
+    <AssemblyName>m2ostnextservice</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress>
+    </Use64BitIISExpress>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.1, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF5, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Xam-Test\MySql.Data.Entity.EF5.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Xam-Test\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Rotativa, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Masti\Workspace\Masti\packages\Rotativa.1.6.4\lib\net40\Rotativa.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.7\lib\net45\System.Web.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.7\lib\net45\System.Web.Http.Cors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\AssessmentEvaluation\" />
+    <Folder Include="Views\B2BAuthenticationLink\" />
+    <Folder Include="Views\DashboardWebView\GameScoring\" />
+    <Folder Include="Views\DashversboardWebView\" />
+    <Folder Include="Views\getBriefResourceDetailWithQuestionTheme\" />
+    <Folder Include="Views\getColorConfig\" />
+    <Folder Include="Views\getNotificationAlert\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\DashboardJSONController.cs" />
+    <Compile Include="Controllers\AssesmentJSONController.cs" />
+    <Compile Include="Controllers\LeaderboardJSONController.cs" />
+    <Compile Include="Controllers\GetSkillTilesController.cs" />
+    <Compile Include="Content\getColorConfigController.cs" />
+    <Compile Include="Controllers\API1Controller.cs" />
+    <Compile Include="Controllers\API2Controller.cs" />
+    <Compile Include="Controllers\AssessmentCategoryController.cs" />
+    <Compile Include="Controllers\AssessmentListController.cs" />
+    <Compile Include="Controllers\AssessmentSheetController.cs" />
+    <Compile Include="Controllers\AuthenticateAPIController.cs" />
+    <Compile Include="Controllers\AuthenticateBriefTileController.cs" />
+    <Compile Include="Controllers\AuthenticateLoginController.cs" />
+    <Compile Include="Controllers\B2BAuthenticationController.cs" />
+    <Compile Include="Controllers\B2BAuthenticationGetAPIController.cs" />
+    <Compile Include="Controllers\B2BAuthenticationLinkController.cs" />
+    <Compile Include="Controllers\B2BAuthenticationPostController.cs" />
+    <Compile Include="Controllers\B2BAuthenticationWithMenuController.cs" />
+    <Compile Include="Controllers\B2BIPhoneAuthController.cs" />
+    <Compile Include="Controllers\B2BIPhoneAuthenticationController.cs" />
+    <Compile Include="Controllers\B2BIPhoneController.cs" />
+    <Compile Include="Controllers\B2BMonoLoginController.cs" />
+    <Compile Include="Controllers\B2CAPIController.cs" />
+    <Compile Include="Controllers\B2CAPIvController.cs" />
+    <Compile Include="Controllers\B2CSocialAuthController.cs" />
+    <Compile Include="Controllers\BannerServiceController.cs" />
+    <Compile Include="Controllers\BriefProductEnquiryController.cs" />
+    <Compile Include="Controllers\CalltoActionController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CategoryDetailsController.cs" />
+    <Compile Include="Controllers\CeDashboardController.cs" />
+    <Compile Include="Controllers\ChangeEpisodeStatusController.cs" />
+    <Compile Include="Controllers\ChangePasswordController.cs" />
+    <Compile Include="Controllers\ChangeProfileImageController.cs" />
+    <Compile Include="Controllers\CheckNonDisclosureLogController.cs" />
+    <Compile Include="Controllers\CheckReferralCodeController.cs" />
+    <Compile Include="Controllers\checkUserStatusController.cs" />
+    <Compile Include="Controllers\collegelistController.cs" />
+    <Compile Include="Controllers\CoroebusConnectController.cs" />
+    <Compile Include="Controllers\CreateCVController.cs" />
+    <Compile Include="Controllers\CreateResumeController.cs" />
+    <Compile Include="Controllers\CreateVideoCVController.cs" />
+    <Compile Include="Controllers\CVBuilderController.cs" />
+    <Compile Include="Controllers\DashboardCEController.cs" />
+    <Compile Include="Controllers\DashboardWebViewController.cs" />
+    <Compile Include="Controllers\DashversboardWebViewController.cs" />
+    <Compile Include="Controllers\DecryptAESController.cs" />
+    <Compile Include="Controllers\DisplayCategoryController.cs" />
+    <Compile Include="Controllers\DisplayCategoryListController.cs" />
+    <Compile Include="Controllers\DocumentUploadController.cs" />
+    <Compile Include="Controllers\DownloadResumeController.cs" />
+    <Compile Include="Controllers\EpisodewiseLeaderBoardController.cs" />
+    <Compile Include="Controllers\EvaluateAssessmentController.cs" />
+    <Compile Include="Controllers\EvaluateBriefAcademyController.cs" />
+    <Compile Include="Controllers\EvaluateBriefController.cs" />
+    <Compile Include="Controllers\EvaluateCEvaluationController.cs" />
+    <Compile Include="Controllers\EvaluateQuestionController.cs" />
+    <Compile Include="Controllers\ForcePasswordChangeBriefController.cs" />
+    <Compile Include="Controllers\ForcePasswordChangeController.cs" />
+    <Compile Include="Controllers\ForgetPasswordController.cs" />
+    <Compile Include="Controllers\GameScoringController.cs" />
+    <Compile Include="Controllers\GetAccessRoleController.cs" />
+    <Compile Include="Controllers\getActiveBriefListController.cs" />
+    <Compile Include="Controllers\getAssessmentCategoryController.cs" />
+    <Compile Include="Controllers\getAssessmentsListForJobController.cs" />
+    <Compile Include="Controllers\getBannerAdContentController.cs" />
+    <Compile Include="Controllers\getBannerContentController.cs" />
+    <Compile Include="Controllers\GetBannerController.cs" />
+    <Compile Include="Controllers\getBannerListController.cs" />
+    <Compile Include="Controllers\getBriefAssessmsntResultController.cs" />
+    <Compile Include="Controllers\getBriefCompletionListController.cs" />
+    <Compile Include="Controllers\getBriefCountForAcademyController.cs" />
+    <Compile Include="Controllers\getBriefDetailsController.cs" />
+    <Compile Include="Controllers\getBriefListForStudyAbroadController.cs" />
+    <Compile Include="Controllers\getBriefListwithAcademyController.cs" />
+    <Compile Include="Controllers\getBriefNativeNotificatonController.cs" />
+    <Compile Include="Controllers\getBriefNotificationListController.cs" />
+    <Compile Include="Controllers\getbriefReadController.cs" />
+    <Compile Include="Controllers\getBriefReadStatusController.cs" />
+    <Compile Include="Controllers\getBriefResourceDetailController.cs" />
+    <Compile Include="Controllers\getBriefResourceDetailWithQuestionThemeController.cs" />
+    <Compile Include="Controllers\getBriefResultStatusController.cs" />
+    <Compile Include="Controllers\getBriefStatusController.cs" />
+    <Compile Include="Controllers\getBriefTilesController.cs" />
+    <Compile Include="Controllers\getBuisinessStagesListController.cs" />
+    <Compile Include="Controllers\getCareerDashboardController.cs" />
+    <Compile Include="Controllers\getCareerDashboardV2Controller.cs" />
+    <Compile Include="Controllers\getCareerEvaluationDataController.cs" />
+    <Compile Include="Controllers\getCareerEvalutionResultController.cs" />
+    <Compile Include="Controllers\getCategoryDashboardController.cs" />
+    <Compile Include="Controllers\getCategoryTileListForNonLearningController.cs" />
+    <Compile Include="Controllers\getCEAssessmentDetailController.cs" />
+    <Compile Include="Controllers\getCEMyDashboardController.cs" />
+    <Compile Include="Controllers\GetContentDetailsController.cs" />
+    <Compile Include="Controllers\getContentLinksController.cs" />
+    <Compile Include="Controllers\getCVDetailsController.cs" />
+    <Compile Include="Controllers\getDegreeListController.cs" />
+    <Compile Include="Controllers\GetEmployeeIDController.cs" />
+    <Compile Include="Controllers\getEntrepreneurshipProductListController.cs" />
+    <Compile Include="Controllers\getEpisodeContentsController.cs" />
+    <Compile Include="Controllers\getEpisodesStatusController.cs" />
+    <Compile Include="Controllers\getEpisodewiseDataController.cs" />
+    <Compile Include="Controllers\getEvalutionResultController.cs" />
+    <Compile Include="Controllers\getEventsInDateController.cs" />
+    <Compile Include="Controllers\GetAcademicTilesController.cs" />
+    <Compile Include="Controllers\getEventUserDataController.cs" />
+    <Compile Include="Controllers\getFoundationMasterDataController.cs" />
+    <Compile Include="Controllers\getGameContentAssessmentController.cs" />
+    <Compile Include="Controllers\getGamesListForOrganizationController.cs" />
+    <Compile Include="Controllers\getGraduationYearListController.cs" />
+    <Compile Include="Controllers\getHardCodedCountController.cs" />
+    <Compile Include="Controllers\getIndustryListController.cs" />
+    <Compile Include="Controllers\getJobCategoryListController.cs" />
+    <Compile Include="Controllers\getJobCatListController.cs" />
+    <Compile Include="Controllers\getJobPreferencesDataController.cs" />
+    <Compile Include="Controllers\getJobPreferencesDetailsController.cs" />
+    <Compile Include="Controllers\getJobPrefStatusController.cs" />
+    <Compile Include="Controllers\getJobRoleListController.cs" />
+    <Compile Include="Controllers\getJobUrlController.cs" />
+    <Compile Include="Controllers\getLearningAssessmentController.cs" />
+    <Compile Include="Controllers\getLevelsForGameController.cs" />
+    <Compile Include="Controllers\getLevelwiseUserDataController.cs" />
+    <Compile Include="Controllers\GetLogoController.cs" />
+    <Compile Include="Controllers\getM2ostSwipeDetailsController.cs" />
+    <Compile Include="Controllers\getMACIDController.cs" />
+    <Compile Include="Controllers\GetMenuController.cs" />
+    <Compile Include="Controllers\GetMyPlayListController.cs" />
+    <Compile Include="Controllers\getMyReportDetailsController.cs" />
+    <Compile Include="Controllers\getMyReportsController.cs" />
+    <Compile Include="Controllers\getNonDisclosureContentController.cs" />
+    <Compile Include="Controllers\getNotificationAlertController.cs" />
+    <Compile Include="Controllers\getNotificationCountController.cs" />
+    <Compile Include="Controllers\getNotificationListController.cs" />
+    <Compile Include="Controllers\GetOfflineAnswerStepsController.cs" />
+    <Compile Include="Controllers\GetOfflineCategoryController.cs" />
+    <Compile Include="Controllers\GetOfflineContentAnswerController.cs" />
+    <Compile Include="Controllers\GetOfflineContentController.cs" />
+    <Compile Include="Controllers\GetOfflineContentMetadataController.cs" />
+    <Compile Include="Controllers\GetOfflineExpiryController.cs" />
+    <Compile Include="Controllers\GetProfileBodyController.cs" />
+    <Compile Include="Controllers\getProfileDetailsController.cs" />
+    <Compile Include="Controllers\getQuestionsForEpisodeController.cs" />
+    <Compile Include="Controllers\getReadBriefsAcademyController.cs" />
+    <Compile Include="Controllers\getReadBriefsForAcademyController.cs" />
+    <Compile Include="Controllers\getReferralHistoryController.cs" />
+    <Compile Include="Controllers\getScheduledBriefListController.cs" />
+    <Compile Include="Controllers\getScheduledBriefTileListController.cs" />
+    <Compile Include="Controllers\getScheduledEventController.cs" />
+    <Compile Include="Controllers\getScheduledResourceListController.cs" />
+    <Compile Include="Controllers\getScoreLogForUserController.cs" />
+    <Compile Include="Controllers\getSearchController.cs" />
+    <Compile Include="Controllers\getSkillLabEventsController.cs" />
+    <Compile Include="Controllers\getStreamListController.cs" />
+    <Compile Include="Controllers\getSubscribedEventsController.cs" />
+    <Compile Include="Controllers\getSULEventHeaderController.cs" />
+    <Compile Include="Controllers\getSULFestListController.cs" />
+    <Compile Include="Controllers\getTagPhotoListController.cs" />
+    <Compile Include="Controllers\getTeamMembersController.cs" />
+    <Compile Include="Controllers\getTestingVideoController.cs" />
+    <Compile Include="Controllers\getUniversityGameListController.cs" />
+    <Compile Include="Controllers\getUniversityNotificationListController.cs" />
+    <Compile Include="Controllers\getUnreadBriefListController.cs" />
+    <Compile Include="Controllers\getBriefListForAcademyController.cs" />
+    <Compile Include="Controllers\getUnreadBriefsForAcademyController.cs" />
+    <Compile Include="Controllers\getUserAcademicScoreController.cs" />
+    <Compile Include="Controllers\GetUserAttemptsController.cs" />
+    <Compile Include="Controllers\getUserBadgesController.cs" />
+    <Compile Include="Controllers\getUserScoreController.cs" />
+    <Compile Include="Controllers\GetVersionControlController.cs" />
+    <Compile Include="Controllers\GetVersionControlIosController.cs" />
+    <Compile Include="Controllers\getBriefVersionController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\IPhoneCategoryController.cs" />
+    <Compile Include="Controllers\LeaderDashboardDataController.cs" />
+    <Compile Include="Controllers\LikeContentController.cs" />
+    <Compile Include="Controllers\logGCMController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\LogNonClosureClauseController.cs" />
+    <Compile Include="Helper\ErrorLogger.cs" />
+    <Compile Include="Controllers\MasterLeaderBoardController.cs" />
+    <Compile Include="Controllers\MultipartDemoController.cs" />
+    <Compile Include="Controllers\MyAssignmentController.cs" />
+    <Compile Include="Controllers\MydashbordDataController.cs" />
+    <Compile Include="Controllers\OrgAssociationController.cs" />
+    <Compile Include="Controllers\OrgGameChangePasswordController.cs" />
+    <Compile Include="Controllers\OrgGameLeaderBoardController.cs" />
+    <Compile Include="Controllers\OrgGameOverallLeaderBoardController.cs" />
+    <Compile Include="Controllers\OrgGamePostAssessmentLogController.cs" />
+    <Compile Include="Controllers\OrgGamePostBadgeDataController.cs" />
+    <Compile Include="Controllers\OrgGameScoreDataPostController.cs" />
+    <Compile Include="Controllers\OrgGameSendSecretKeyController.cs" />
+    <Compile Include="Controllers\OrgGameUnitsDashboardController.cs" />
+    <Compile Include="Controllers\OrgGameUserAvatarUpdateController.cs" />
+    <Compile Include="Controllers\OrgGameUserDashboardController.cs" />
+    <Compile Include="Controllers\OrgGameUserScoreDetailsController.cs" />
+    <Compile Include="Controllers\PasswordResetController.cs" />
+    <Compile Include="Controllers\PostAssessmentLogController.cs" />
+    <Compile Include="Controllers\PostBriefUserFeedbackController.cs" />
+    <Compile Include="Controllers\PostEntrepreneurshipController.cs" />
+    <Compile Include="Controllers\PostEntrepreneurshipFilesController.cs" />
+    <Compile Include="Controllers\PostFeedbackController.cs" />
+    <Compile Include="Controllers\PostHigherEducationRegFeedbackController.cs" />
+    <Compile Include="Controllers\PostPhotoUploadController.cs" />
+    <Compile Include="Controllers\PostResumeController.cs" />
+    <Compile Include="Controllers\PostSeminarRegFeedbackController.cs" />
+    <Compile Include="Controllers\PostSocialEntrepreneurshipController.cs" />
+    <Compile Include="Controllers\PostUserEnquiryController.cs" />
+    <Compile Include="Controllers\PostProfilePartialUpdateController.cs" />
+    <Compile Include="Controllers\RegistrationServiceController.cs" />
+    <Compile Include="Controllers\ReSendSULEventRegOTPController.cs" />
+    <Compile Include="Controllers\SatisfiedController.cs" />
+    <Compile Include="Controllers\PlaylistSearchController .cs" />
+    <Compile Include="Controllers\SearchController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\SearchNewController.cs" />
+    <Compile Include="Controllers\SendFCMNotificationController.cs" />
+    <Compile Include="Controllers\SignupAttributesValidationController.cs" />
+    <Compile Include="Controllers\SkillmuniFilter.cs" />
+    <Compile Include="Controllers\SubscribeToEventController.cs" />
+    <Compile Include="Controllers\SULFestEventRegistrationController.cs" />
+    <Compile Include="Controllers\SulHigherEducationRegistrationController.cs" />
+    <Compile Include="Controllers\SulSeminarRegisterationController.cs" />
+    <Compile Include="Controllers\SulSeminarRegistrationMultiSlotsController.cs" />
+    <Compile Include="Controllers\SULVerifyEventRegOTPController.cs" />
+    <Compile Include="Controllers\SyncUserDataController.cs" />
+    <Compile Include="Controllers\TestwebController.cs" />
+    <Compile Include="Controllers\TriggerSulFestInAppInvitaionController.cs" />
+    <Compile Include="Controllers\TriggerSulFestMailInvitaionController.cs" />
+    <Compile Include="Controllers\UIDAuthenticationController.cs" />
+    <Compile Include="Controllers\UniversityLeaderBoardController.cs" />
+    <Compile Include="Controllers\UniversitySignupController.cs" />
+    <Compile Include="Controllers\UnsubscribeEventController.cs" />
+    <Compile Include="Controllers\UpdateBriefLogController.cs" />
+    <Compile Include="Controllers\UpdateCategoryController.cs" />
+    <Compile Include="Controllers\UpdateJobpreferencesController.cs" />
+    <Compile Include="Controllers\UpdateProfileController.cs" />
+    <Compile Include="Controllers\UpdateSULProfileImageController.cs" />
+    <Compile Include="Controllers\UpdateUserLogController.cs" />
+    <Compile Include="Controllers\UpdateUserProfileController.cs" />
+    <Compile Include="Controllers\UploadExtraCertificateController.cs" />
+    <Compile Include="Controllers\UserAuthenticationController.cs" />
+    <Compile Include="Controllers\UserDashboardDataController.cs" />
+    <Compile Include="Controllers\UtilityQueryController.cs" />
+    <Compile Include="Controllers\VerifyEmailSecretKeyController.cs" />
+    <Compile Include="Controllers\VerifyMeController.cs" />
+    <Compile Include="downtime_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="error_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="m2ostService.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>m2ostService.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="m2ostService.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="m2ostService.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>m2ostService.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="masti_parent_teacher_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="masti_teacher_galleryfolder.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="masti_teacher_photo_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AESAlgorithm.cs" />
+    <Compile Include="Models\AssesmentJSONResponce.cs" />
+    <Compile Include="Models\AssessmentModel.cs" />
+    <Compile Include="Models\BriefModel.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="Controllers\ContentCounterController.cs" />
+    <Compile Include="Models\CEDashboardModel.cs" />
+    <Compile Include="Models\CEDataClass.cs" />
+    <Compile Include="Models\CEModel.cs" />
+    <Compile Include="Models\CEReportModel.cs" />
+    <Compile Include="Models\ChangePasswordLogic.cs" />
+    <Compile Include="Models\ChangePasswordModel.cs" />
+    <Compile Include="Models\LeaderboardJSONResponce.cs" />
+    <Compile Include="Models\MyDashboardJSONResponce.cs" />
+    <Compile Include="Models\PartialProfileUpdate.cs" />
+    <Compile Include="Models\ColorConfigLogic.cs" />
+    <Compile Include="Models\ColorConfigModels.cs" />
+    <Compile Include="Models\CompanyModel.cs" />
+    <Compile Include="Models\ContentModel.cs" />
+    <Compile Include="Models\ContentReportModel.cs" />
+    <Compile Include="Models\CrmDbContext.cs" />
+    <Compile Include="Models\DailyReportModel.cs" />
+    <Compile Include="Models\EventLogic.cs" />
+    <Compile Include="Models\ForcePasswordChangeLogic.cs" />
+    <Compile Include="Models\ForgetPasswordLogic.cs" />
+    <Compile Include="Models\HigherEducationModel.cs" />
+    <Compile Include="Models\InMemoryMultipartFormDataStreamProvider.cs" />
+    <Compile Include="Models\JobDbContext.cs" />
+    <Compile Include="Models\M2ostCatDbContext.cs" />
+    <Compile Include="Models\m2ostnextserviceDbContext.cs" />
+    <Compile Include="Models\OrgGameModel.cs" />
+    <Compile Include="Models\ProgressiveDistribution.cs" />
+    <Compile Include="Models\NonDisclosureLogic.cs" />
+    <Compile Include="Models\OfflineAccess.cs" />
+    <Compile Include="Models\ProgramScoringModel.cs" />
+    <Compile Include="Models\RegistrationModel.cs" />
+    <Compile Include="Models\Response.cs" />
+    <Compile Include="Models\Rewards.cs" />
+    <Compile Include="Models\RoadMapLogic.cs" />
+    <Compile Include="Models\RoadMapModels.cs" />
+    <Compile Include="Models\SatisfiedModel.cs" />
+    <Compile Include="Models\SearchModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\SeminarModel.cs" />
+    <Compile Include="Models\SignupModel.cs" />
+    <Compile Include="Models\StoredProcedureModel.cs" />
+    <Compile Include="Models\SubscriptionModel.cs" />
+    <Compile Include="Models\SULFestModels.cs" />
+    <Compile Include="Models\SyncModel.cs" />
+    <Compile Include="Models\tbl_game_master.cs" />
+    <Compile Include="Models\tbl_game_user_data.cs" />
+    <Compile Include="Models\UniversityScoringlogic.cs" />
+    <Compile Include="Models\Utilities.cs" />
+    <Compile Include="Models\WiproCMSModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sc_game_element_weightage.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_program_assessment_scoring.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_program_content_summary.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_program_kpi_score.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_program_kpi_weightage.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_program_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_report_game_process_path.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sc_report_game_process_score.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_action.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_answer.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_audit.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_categoty_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_general.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_header.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_index.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_push.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_question.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_scoring_key.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_sheet.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_theme.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessment_user_assignment.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assessmnt_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assignment_role_assessment.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assignment_role_content.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_assignment_role_program.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_authcode.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_banner.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_answer.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_audit.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_b2c_index.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_b2c_right_audit.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_b2c_score_audit.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_category.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_category_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_category_tile.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_index.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_master.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_master_body.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_master_template.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_metadata.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_progdist_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_question.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_question_complexity.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_question_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_question_metadata.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_read_status.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_status.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_subcategory.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_tile_category_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_user_assignment.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_brief_version_control.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_business_type.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_associantion.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_heading.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_heading_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_order.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_tiles.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_category_tiles_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_childinformation.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_cms_roles.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_cms_role_action.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_cms_role_action_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_cms_users.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_color_config.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_color_config_flag.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_answer.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_answer_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_answer_steps.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_banner.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_counters.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_footer.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_header.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_header_footer.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_level.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_link.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_metadata.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_organization_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_organization_mapping_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_program_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_right_association.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_role_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_type.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_type_link.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_content_user_assisgnment.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_csst_role.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_device_type.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_feedback_bank.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_feedback_bank_link.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_feedback_data.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_creation.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_group.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_group_association.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_group_participatant.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_path.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_phase.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_process_path.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_game_solo.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_industry.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_kpi_grid.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_kpi_master.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_kpi_program_scoring.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_menu.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_menu_default.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_menu_type.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_mutthimeinsitare_master.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_mutthi_mein_sitare_milestone.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_mutthi_mein_sitare_skill.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_mutthi_skill_development_detail.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_mutthi_skill_milestone_detail.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_news_ticker.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_non_disclousure_clause_content.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_non_disclousure_clause_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_notification.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_notification_config.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_notification_pre_config.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_notification_reminder.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_offline_expiry.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_organisation_banner.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_organisation_banner_links.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_organisation_status.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_organization.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_profile.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_reminder_notification_config.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_reminder_notification_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_report_content.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_report_login_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_role.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_role_user_mapping.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_rs_type_qna.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_saksham_assessment_detail.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_saksham_assessment_master.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_saksham_assessment_milestone_detail.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_saksham_assessment_skill_detail.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_scheduled_event.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_scheduled_event_subscription_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_skill_development.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_skill_milestone.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_subscriptions.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_survey.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_survey_bank.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_survey_bank_link.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_survey_data.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_task.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_temp_user_upload.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_themes.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_data.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_device_link.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_gcm_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_login_log.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_programs.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_zone.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_user_zone_master.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_version_control.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_version_control_ios.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tbl_welcome_gif.cs">
+      <DependentUpon>m2ostService.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\eBody.html" />
+    <Content Include="Content\images\avatar.jpg" />
+    <Content Include="Content\images\SkinnySeveralAsianlion.gif" />
+    <Content Include="Content\Rewards\css\stylesheet.css" />
+    <Content Include="Content\Rewards\images\gift box.png" />
+    <Content Include="Content\Rewards\images\rewards_02.png" />
+    <Content Include="Content\Rewards\images\rewards_03.png" />
+    <Content Include="Content\Rewards\images\rewards_04.png" />
+    <Content Include="Content\WebView\Assessment\css\font-awesome.min.css" />
+    <Content Include="Content\WebView\Assessment\images\2.jpg" />
+    <Content Include="Content\WebView\Assessment\images\Invite_FOE_bg1.png" />
+    <Content Include="Content\WebView\Assessment\images\qrcode.jpg" />
+    <Content Include="Content\WebView\css\bootstrap.min.css" />
+    <Content Include="Content\WebView\css\font-awesome.min.css" />
+    <Content Include="Content\WebView\css\SKUL.css" />
+    <Content Include="Content\WebView\css\SKUL_01.css" />
+    <Content Include="Content\WebView\css\stylesheet.css" />
+    <Content Include="Content\WebView\fonts\stylesheet.css" />
+    <Content Include="Content\WebView\HomePage\css\bootstrap.min.css" />
+    <Content Include="Content\WebView\HomePage\css\font-awesome.min.css" />
+    <Content Include="Content\WebView\HomePage\css\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\HomePage\css\SKUL.css" />
+    <Content Include="Content\WebView\HomePage\css\SKUL_01.css" />
+    <Content Include="Content\WebView\HomePage\css\SKUL_02.css" />
+    <Content Include="Content\WebView\HomePage\css\stylesheet.css" />
+    <Content Include="Content\WebView\HomePage\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\HomePage\fonts\stylesheet.css" />
+    <Content Include="Content\WebView\HomePage\images\1.jpg" />
+    <Content Include="Content\WebView\HomePage\images\2.jpg" />
+    <Content Include="Content\WebView\HomePage\images\3.jpg" />
+    <Content Include="Content\WebView\HomePage\images\academy.png" />
+    <Content Include="Content\WebView\HomePage\images\arrow.png" />
+    <Content Include="Content\WebView\HomePage\images\assessment.png" />
+    <Content Include="Content\WebView\HomePage\images\assessment_01.png" />
+    <Content Include="Content\WebView\HomePage\images\ball.png" />
+    <Content Include="Content\WebView\HomePage\images\ball_01.png" />
+    <Content Include="Content\WebView\HomePage\images\bg.jpg" />
+    <Content Include="Content\WebView\HomePage\images\bg_01.jpg" />
+    <Content Include="Content\WebView\HomePage\images\book mark.png" />
+    <Content Include="Content\WebView\HomePage\images\bookmark_01.png" />
+    <Content Include="Content\WebView\HomePage\images\boxbg.png" />
+    <Content Include="Content\WebView\HomePage\images\boxbgorange.png" />
+    <Content Include="Content\WebView\HomePage\images\chat png white.png" />
+    <Content Include="Content\WebView\HomePage\images\chat.png" />
+    <Content Include="Content\WebView\HomePage\images\credits.png" />
+    <Content Include="Content\WebView\HomePage\images\credits_01.png" />
+    <Content Include="Content\WebView\HomePage\images\defender.png" />
+    <Content Include="Content\WebView\HomePage\images\dfdfdf.png" />
+    <Content Include="Content\WebView\HomePage\images\football.png" />
+    <Content Include="Content\WebView\HomePage\images\footballnew.png" />
+    <Content Include="Content\WebView\HomePage\images\footer.png" />
+    <Content Include="Content\WebView\HomePage\images\green.png" />
+    <Content Include="Content\WebView\HomePage\images\green1.png" />
+    <Content Include="Content\WebView\HomePage\images\head.png" />
+    <Content Include="Content\WebView\HomePage\images\jobs icon.png" />
+    <Content Include="Content\WebView\HomePage\images\jobs.png" />
+    <Content Include="Content\WebView\HomePage\images\jobsicon_01.png" />
+    <Content Include="Content\WebView\HomePage\images\jobsnew.png" />
+    <Content Include="Content\WebView\HomePage\images\library png.png" />
+    <Content Include="Content\WebView\HomePage\images\library.png" />
+    <Content Include="Content\WebView\HomePage\images\logomail.png" />
+    <Content Include="Content\WebView\HomePage\images\lower buttons.png" />
+    <Content Include="Content\WebView\HomePage\images\mailbox.png" />
+    <Content Include="Content\WebView\HomePage\images\mainbg.png" />
+    <Content Include="Content\WebView\HomePage\images\mainbg1.png" />
+    <Content Include="Content\WebView\HomePage\images\namephoto.png" />
+    <Content Include="Content\WebView\HomePage\images\notebg.png" />
+    <Content Include="Content\WebView\HomePage\images\notification.png" />
+    <Content Include="Content\WebView\HomePage\images\orange button.png" />
+    <Content Include="Content\WebView\HomePage\images\photo.jpg" />
+    <Content Include="Content\WebView\HomePage\images\photo1.jpg" />
+    <Content Include="Content\WebView\HomePage\images\plus.png" />
+    <Content Include="Content\WebView\HomePage\images\plus_01.png" />
+    <Content Include="Content\WebView\HomePage\images\pop up.png" />
+    <Content Include="Content\WebView\HomePage\images\red.png" />
+    <Content Include="Content\WebView\HomePage\images\rewards.png" />
+    <Content Include="Content\WebView\HomePage\images\rewards_01.png" />
+    <Content Include="Content\WebView\HomePage\images\rewards_bg.png" />
+    <Content Include="Content\WebView\HomePage\images\rupee.png" />
+    <Content Include="Content\WebView\HomePage\images\scoremorebutton.png" />
+    <Content Include="Content\WebView\HomePage\images\scoremorebutton1.png" />
+    <Content Include="Content\WebView\HomePage\images\setting.png" />
+    <Content Include="Content\WebView\HomePage\images\tabarrow.png" />
+    <Content Include="Content\WebView\HomePage\images\topgray.png" />
+    <Content Include="Content\WebView\HomePage\images\topgray12.png" />
+    <Content Include="Content\WebView\HomePage\images\topgreen.png" />
+    <Content Include="Content\WebView\HomePage\images\trophy.png" />
+    <Content Include="Content\WebView\HomePage\images\unread icon.png" />
+    <Content Include="Content\WebView\HomePage\images\unreadicon_01.png" />
+    <Content Include="Content\WebView\HomePage\images\wallet icon.png" />
+    <Content Include="Content\WebView\HomePage\images\walleticon_01.png" />
+    <Content Include="Content\WebView\HomePage\js\bootstrap.min.js" />
+    <Content Include="Content\WebView\images\1.jpg" />
+    <Content Include="Content\WebView\images\2.jpg" />
+    <Content Include="Content\WebView\images\3.jpg" />
+    <Content Include="Content\WebView\images\academy.png" />
+    <Content Include="Content\WebView\images\arrow.png" />
+    <Content Include="Content\WebView\images\bg.png" />
+    <Content Include="Content\WebView\images\bg_001.png" />
+    <Content Include="Content\WebView\images\bg_10.png" />
+    <Content Include="Content\WebView\images\boxbg.png" />
+    <Content Include="Content\WebView\images\chat png white.png" />
+    <Content Include="Content\WebView\images\chat.png" />
+    <Content Include="Content\WebView\images\defender.png" />
+    <Content Include="Content\WebView\images\football.png" />
+    <Content Include="Content\WebView\images\footer.png" />
+    <Content Include="Content\WebView\images\green.png" />
+    <Content Include="Content\WebView\images\green1.png" />
+    <Content Include="Content\WebView\images\head.png" />
+    <Content Include="Content\WebView\images\jobpoint.png" />
+    <Content Include="Content\WebView\images\jobs.png" />
+    <Content Include="Content\WebView\images\jobsnew.png" />
+    <Content Include="Content\WebView\images\library png.png" />
+    <Content Include="Content\WebView\images\library.png" />
+    <Content Include="Content\WebView\images\logomail.png" />
+    <Content Include="Content\WebView\images\mailbox.png" />
+    <Content Include="Content\WebView\images\namephoto.png" />
+    <Content Include="Content\WebView\images\notebg.png" />
+    <Content Include="Content\WebView\images\notification.png" />
+    <Content Include="Content\WebView\images\photo.jpg" />
+    <Content Include="Content\WebView\images\photo1.jpg" />
+    <Content Include="Content\WebView\images\trophy.png" />
+    <Content Include="Content\WebView\js\bootstrap.min.js" />
+    <Content Include="Content\WebView\MyDashboard\css\bootstrap.min.css" />
+    <Content Include="Content\WebView\MyDashboard\css\font-awesome.min.css" />
+    <Content Include="Content\WebView\MyDashboard\css\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\MyDashboard\css\SKUL_02.css" />
+    <Content Include="Content\WebView\MyDashboard\css\stylesheet.css" />
+    <Content Include="Content\WebView\MyDashboard\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\MyDashboard\fonts\stylesheet.css" />
+    <Content Include="Content\WebView\MyDashboard\images\1.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\2.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\3.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\academy.png" />
+    <Content Include="Content\WebView\MyDashboard\images\arrow.png" />
+    <Content Include="Content\WebView\MyDashboard\images\assessment.png" />
+    <Content Include="Content\WebView\MyDashboard\images\assessment_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\ball.png" />
+    <Content Include="Content\WebView\MyDashboard\images\ball_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\bg.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\bg_01.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\book mark.png" />
+    <Content Include="Content\WebView\MyDashboard\images\bookmark_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\boxbg.png" />
+    <Content Include="Content\WebView\MyDashboard\images\boxbgorange.png" />
+    <Content Include="Content\WebView\MyDashboard\images\chat png white.png" />
+    <Content Include="Content\WebView\MyDashboard\images\chat.png" />
+    <Content Include="Content\WebView\MyDashboard\images\credits.png" />
+    <Content Include="Content\WebView\MyDashboard\images\credits_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\defender.png" />
+    <Content Include="Content\WebView\MyDashboard\images\football.png" />
+    <Content Include="Content\WebView\MyDashboard\images\footer.png" />
+    <Content Include="Content\WebView\MyDashboard\images\green.png" />
+    <Content Include="Content\WebView\MyDashboard\images\green1.png" />
+    <Content Include="Content\WebView\MyDashboard\images\head.png" />
+    <Content Include="Content\WebView\MyDashboard\images\jobs icon.png" />
+    <Content Include="Content\WebView\MyDashboard\images\jobs.png" />
+    <Content Include="Content\WebView\MyDashboard\images\jobsicon_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\jobsnew.png" />
+    <Content Include="Content\WebView\MyDashboard\images\library png.png" />
+    <Content Include="Content\WebView\MyDashboard\images\library.png" />
+    <Content Include="Content\WebView\MyDashboard\images\logomail.png" />
+    <Content Include="Content\WebView\MyDashboard\images\lower buttons.png" />
+    <Content Include="Content\WebView\MyDashboard\images\mailbox.png" />
+    <Content Include="Content\WebView\MyDashboard\images\mainbg.png" />
+    <Content Include="Content\WebView\MyDashboard\images\mainbg1.png" />
+    <Content Include="Content\WebView\MyDashboard\images\namephoto.png" />
+    <Content Include="Content\WebView\MyDashboard\images\notebg.png" />
+    <Content Include="Content\WebView\MyDashboard\images\notification.png" />
+    <Content Include="Content\WebView\MyDashboard\images\orange button.png" />
+    <Content Include="Content\WebView\MyDashboard\images\photo.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\photo1.jpg" />
+    <Content Include="Content\WebView\MyDashboard\images\pop up.png" />
+    <Content Include="Content\WebView\MyDashboard\images\rewards.png" />
+    <Content Include="Content\WebView\MyDashboard\images\rewards_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\scoremorebutton.png" />
+    <Content Include="Content\WebView\MyDashboard\images\scoremorebutton1.png" />
+    <Content Include="Content\WebView\MyDashboard\images\trophy.png" />
+    <Content Include="Content\WebView\MyDashboard\images\unread icon.png" />
+    <Content Include="Content\WebView\MyDashboard\images\unreadicon_01.png" />
+    <Content Include="Content\WebView\MyDashboard\images\wallet icon.png" />
+    <Content Include="Content\WebView\MyDashboard\images\walleticon_01.png" />
+    <Content Include="Content\WebView\MyDashboard\js\bootstrap.min.js" />
+    <Content Include="Content\WebView\Rewards\css\bootstrap.min.css" />
+    <Content Include="Content\WebView\Rewards\css\font-awesome.min.css" />
+    <Content Include="Content\WebView\Rewards\css\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\Rewards\css\SKUL.css" />
+    <Content Include="Content\WebView\Rewards\css\SKUL_01.css" />
+    <Content Include="Content\WebView\Rewards\css\SKUL_02.css" />
+    <Content Include="Content\WebView\Rewards\css\stylesheet.css" />
+    <Content Include="Content\WebView\Rewards\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\WebView\Rewards\fonts\stylesheet.css" />
+    <Content Include="Content\WebView\Rewards\images\1.jpg" />
+    <Content Include="Content\WebView\Rewards\images\2.jpg" />
+    <Content Include="Content\WebView\Rewards\images\3.jpg" />
+    <Content Include="Content\WebView\Rewards\images\academy.png" />
+    <Content Include="Content\WebView\Rewards\images\arrow.png" />
+    <Content Include="Content\WebView\Rewards\images\assessment.png" />
+    <Content Include="Content\WebView\Rewards\images\assessment_01.png" />
+    <Content Include="Content\WebView\Rewards\images\ball.png" />
+    <Content Include="Content\WebView\Rewards\images\ball_01.png" />
+    <Content Include="Content\WebView\Rewards\images\bg.jpg" />
+    <Content Include="Content\WebView\Rewards\images\bg_01.jpg" />
+    <Content Include="Content\WebView\Rewards\images\book mark.png" />
+    <Content Include="Content\WebView\Rewards\images\bookmark_01.png" />
+    <Content Include="Content\WebView\Rewards\images\boxbg.png" />
+    <Content Include="Content\WebView\Rewards\images\boxbgorange.png" />
+    <Content Include="Content\WebView\Rewards\images\chat png white.png" />
+    <Content Include="Content\WebView\Rewards\images\chat.png" />
+    <Content Include="Content\WebView\Rewards\images\credits.png" />
+    <Content Include="Content\WebView\Rewards\images\credits_01.png" />
+    <Content Include="Content\WebView\Rewards\images\defender.png" />
+    <Content Include="Content\WebView\Rewards\images\football.png" />
+    <Content Include="Content\WebView\Rewards\images\footer.png" />
+    <Content Include="Content\WebView\Rewards\images\green.png" />
+    <Content Include="Content\WebView\Rewards\images\green1.png" />
+    <Content Include="Content\WebView\Rewards\images\head.png" />
+    <Content Include="Content\WebView\Rewards\images\jobs icon.png" />
+    <Content Include="Content\WebView\Rewards\images\jobs.png" />
+    <Content Include="Content\WebView\Rewards\images\jobsicon_01.png" />
+    <Content Include="Content\WebView\Rewards\images\jobsnew.png" />
+    <Content Include="Content\WebView\Rewards\images\library png.png" />
+    <Content Include="Content\WebView\Rewards\images\library.png" />
+    <Content Include="Content\WebView\Rewards\images\logomail.png" />
+    <Content Include="Content\WebView\Rewards\images\lower buttons.png" />
+    <Content Include="Content\WebView\Rewards\images\mailbox.png" />
+    <Content Include="Content\WebView\Rewards\images\mainbg.png" />
+    <Content Include="Content\WebView\Rewards\images\mainbg1.png" />
+    <Content Include="Content\WebView\Rewards\images\namephoto.png" />
+    <Content Include="Content\WebView\Rewards\images\notebg.png" />
+    <Content Include="Content\WebView\Rewards\images\notification.png" />
+    <Content Include="Content\WebView\Rewards\images\orange button.png" />
+    <Content Include="Content\WebView\Rewards\images\photo.jpg" />
+    <Content Include="Content\WebView\Rewards\images\photo1.jpg" />
+    <Content Include="Content\WebView\Rewards\images\pop up.png" />
+    <Content Include="Content\WebView\Rewards\images\rewards.png" />
+    <Content Include="Content\WebView\Rewards\images\rewards_01.png" />
+    <Content Include="Content\WebView\Rewards\images\rewards_bg.png" />
+    <Content Include="Content\WebView\Rewards\images\rupee.png" />
+    <Content Include="Content\WebView\Rewards\images\scoremorebutton.png" />
+    <Content Include="Content\WebView\Rewards\images\scoremorebutton1.png" />
+    <Content Include="Content\WebView\Rewards\images\tabarrow.png" />
+    <Content Include="Content\WebView\Rewards\images\trophy.png" />
+    <Content Include="Content\WebView\Rewards\images\unread icon.png" />
+    <Content Include="Content\WebView\Rewards\images\unreadicon_01.png" />
+    <Content Include="Content\WebView\Rewards\images\wallet icon.png" />
+    <Content Include="Content\WebView\Rewards\images\walleticon_01.png" />
+    <Content Include="Content\WebView\Rewards\js\bootstrap.min.js" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="m2ostService.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>m2ostService.edmx</DependentUpon>
+      <LastGenOutput>m2ostService.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="m2ostService.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>m2ostService.edmx</DependentUpon>
+      <LastGenOutput>m2ostService.cs</LastGenOutput>
+    </Content>
+    <Content Include="Rotativa\libeay32.dll" />
+    <Content Include="Rotativa\libgcc_s_dw2-1.dll" />
+    <Content Include="Rotativa\mingwm10.dll" />
+    <Content Include="Rotativa\README.txt" />
+    <Content Include="Rotativa\ssleay32.dll" />
+    <Content Include="Rotativa\wkhtmltopdf.exe" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <EntityDeploy Include="m2ostService.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>m2ostService.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="m2ostService.edmx.diagram">
+      <DependentUpon>m2ostService.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\WebView\css\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\css\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\css\haettenschweiler-regular-webfont.woff" />
+    <Content Include="Content\WebView\css\haettenschweiler-regular-webfont.woff2" />
+    <Content Include="Content\WebView\fonts\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\fonts\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\fonts\haettenschweiler-regular-webfont.woff" />
+    <Content Include="Content\WebView\fonts\haettenschweiler-regular-webfont.woff2" />
+    <Content Include="Content\WebView\MyDashboard\css\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\MyDashboard\css\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\MyDashboard\css\fontawesome-webfont.eot" />
+    <Content Include="Content\WebView\MyDashboard\css\fontawesome-webfont.ttf" />
+    <Content Include="Content\WebView\MyDashboard\css\fontawesome-webfont.woff" />
+    <Content Include="Content\WebView\MyDashboard\css\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\MyDashboard\css\FontAwesome.otf" />
+    <Content Include="Content\WebView\MyDashboard\fonts\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\MyDashboard\fonts\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\MyDashboard\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\MyDashboard\fonts\FontAwesome.otf" />
+    <Content Include="Content\WebView\Rewards\css\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\Rewards\css\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\Rewards\css\fontawesome-webfont.eot" />
+    <Content Include="Content\WebView\Rewards\css\fontawesome-webfont.ttf" />
+    <Content Include="Content\WebView\Rewards\css\fontawesome-webfont.woff" />
+    <Content Include="Content\WebView\Rewards\css\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\Rewards\css\FontAwesome.otf" />
+    <Content Include="Content\WebView\Rewards\fonts\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\Rewards\fonts\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\Rewards\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\Rewards\fonts\FontAwesome.otf" />
+    <Content Include="Content\WebView\Assessment\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\WebView\Assessment\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\WebView\Assessment\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\WebView\Assessment\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\Assessment\fonts\FontAwesome.otf" />
+    <Content Include="Content\WebView\HomePage\css\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\HomePage\css\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\HomePage\css\fontawesome-webfont.eot" />
+    <Content Include="Content\WebView\HomePage\css\fontawesome-webfont.ttf" />
+    <Content Include="Content\WebView\HomePage\css\fontawesome-webfont.woff" />
+    <Content Include="Content\WebView\HomePage\css\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\HomePage\css\FontAwesome.otf" />
+    <Content Include="Content\WebView\HomePage\fonts\bebasneue-regular-webfont.woff" />
+    <Content Include="Content\WebView\HomePage\fonts\bebasneue-regular-webfont.woff2" />
+    <Content Include="Content\WebView\HomePage\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\WebView\HomePage\fonts\FontAwesome.otf" />
+    <Content Include="Content\Rewards\css\itf_rupee-webfont.woff" />
+    <Content Include="Content\Rewards\css\itf_rupee-webfont.woff2" />
+    <Content Include="App_Browsers\qt.browser" />
+    <None Include="Properties\PublishProfiles\Prakash.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\DashboardWebView\ProfileHome.cshtml" />
+    <Content Include="Views\DashboardWebView\FootballLeaderBoard.cshtml" />
+    <Content Include="Views\DashboardWebView\AssessmentSheet.cshtml" />
+    <Content Include="Views\DashboardWebView\MyDashboard.cshtml" />
+    <Content Include="Views\DashboardWebView\RewardsPage.cshtml" />
+    <Content Include="Views\DashboardWebView\RewardsRedirectPage.cshtml" />
+    <Content Include="Views\DashboardWebView\FootballLeaderBoardForCollege.cshtml" />
+    <Content Include="Views\DashboardWebView\FootballLeaderBoardForCountry.cshtml" />
+    <Content Include="Views\DashboardWebView\APIREstrictionPage.cshtml" />
+    <Content Include="Views\DashboardWebView\FormSub.cshtml" />
+    <Content Include="Views\DashboardWebView\Index.cshtml" />
+    <Content Include="Views\DashboardWebView\FootballLeaderboardPartialView.cshtml" />
+    <Content Include="Views\DashboardWebView\FootBallLeaderBoardCollegePartialView.cshtml" />
+    <Content Include="Views\DashboardWebView\FootBallLeaderBoardCountryPartialView.cshtml" />
+    <Content Include="Views\CVBuilder\GenerateResume.cshtml" />
+    <Content Include="Views\UtilityQuery\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7472</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7506/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

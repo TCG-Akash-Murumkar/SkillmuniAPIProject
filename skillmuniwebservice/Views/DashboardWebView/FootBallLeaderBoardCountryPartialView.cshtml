@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "FootBallLeaderBoardCountryPartialView";
+    Layout = null;
+    m2ostnextservice.Models.LeaderBoardResponse Leader = (m2ostnextservice.Models.LeaderBoardResponse)ViewData["Leader"];
+
+}
+
+@foreach (var lis in Leader.UserList)
+{
+
+    <table width="100%" style="margin-top:3px;">
+        <tr>
+            @if (lis.Rank == 1)
+            {
+                <td class="tdbgcolor1" width="40"><img src="~/Content/WebView/images/1.jpg" width="40"></td>
+            }
+            else if (lis.Rank == 2)
+            {
+                <td class="tdbgcolor1" width="40"><img src="~/Content/WebView/images/2.jpg" width="40"></td>
+            }
+            else if (lis.Rank == 3)
+            {
+                <td class="tdbgcolor1" width="40"><img src="~/Content/WebView/images/3.jpg" width="40"></td>
+            }
+            else
+
+            {
+                <td class="tdbgcolor1" width="43" align="center">#@lis.Rank</td>
+
+            }
+            <td class="tdbgcolor" width="40"><img src="@lis.UserProfileImage" width="40"></td>
+            <td class="tdbgcolor" align="left">@lis.Username<br><span class="fontcity">@lis.city</span></td>
+            <td class="tdbgcolor" align="center" width="35">@lis.special_metric_score</td>
+            <td class="tdbgcolor" align="center" width="45">@lis.currencyvalue</td>
+            <td class="tdbgcolor" align="center" width="70">@lis.metric_score
+        </tr>
+    </table>
+}
+

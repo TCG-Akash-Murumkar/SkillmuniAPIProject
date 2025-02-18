@@ -1,0 +1,146 @@
+﻿
+@{
+    ViewBag.Title = "ProfileHome";
+    Layout = null;
+    tbl_profile prof = (tbl_profile)ViewData["profile"];
+    m2ostnextservice.Models.UserScoreResponse score = (m2ostnextservice.Models.UserScoreResponse)ViewData["briefData"];
+    int uid = (int)ViewData["UID"];
+    int oid = (int)ViewData["OID"];
+    //string name = prof.FIRSTNAME + " " + prof.LASTNAME;
+
+}
+
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" media="all" href="~/Content/WebView/HomePage/css/stylesheet.css" />
+    <link rel="stylesheet" media="all" href="~/Content/WebView/HomePage/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="all" href="~/Content/WebView/HomePage/css/SKUL_01.css" />
+    <link rel="stylesheet" media="all" href="~/Content/WebView/HomePage/css/bootstrap.min.css" />
+
+    <style>
+        .new_topblankspace {
+            width: 100%;
+            height: 100%;
+            background: url('../../Content/WebView/HomePage/images/topgray.png') no-repeat top center fixed;
+            background-attachment: fixed;
+            background-size: contain;
+            height: 72px;
+        }
+
+        .new_topfull {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+            padding-top: 2%
+        }
+    </style>
+
+    <script type="text/javascript">
+        // Calling myacademy android lsyout screen
+        function myacademy() {
+            Android.myacademytile();
+        }
+
+        function leaderboard(url) {
+
+            Android.showleaderboard(url);
+        }
+        function MyUserDashboard(url) {
+
+            Android.showMyDashboard(url);
+        }
+        function NotificationList() {
+
+            Android.Notification();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!----------------  top menu  -------------->
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="new_topblankspace">
+                    <div class="new_topfull">
+                        <i class="fa fa-cog" style="font-size:30px; color:#fbffff; padding-left:3%;"></i>
+
+
+                        <div style="width:120px;float:right; margin-right: 10px; background:#333333; text-align:center; font-size:20px; color:#FFF; border-radius:5px;">
+                            <img src="@score.currency_image" width="30" style="text-align:left; float:left;padding: 3px;">
+                            @score.currency_value
+                            <img src="~/Content/WebView/HomePage/images/plus_01.png" width="30" style="text-align:right; float:right;padding: 3px;">
+                        </div>
+
+                        <div style="width:70px;float:right; margin-right: 5%; background:#333333; text-align:center; font-size:20px; color:#FFF; border-radius:5px;">
+                            <img src="~/Content/WebView/HomePage/images/football.png" width="30" style="text-align:left; float:left; padding: 3px;">
+                            @score.userscore
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------  top menu end  -------------->
+
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="new_mainbox">
+                    <div class="new_mainboximg">
+                        <img src="~/Content/WebView/HomePage/images/namephoto.png">
+                    </div>
+                    <div class="new_headimg">
+                        <a onclick="MyUserDashboard('https://www.skillmuni.in/SkillmuniUniversityApiBeta/DashboardWebView/MyDashboard?UID=@uid&OID=@oid')">
+                            <img src="@prof.PROFILE_IMAGE" width="60" height="60">
+                        </a>
+                    </div>
+                    <div class="new_headname">
+                        @prof.FIRSTNAME
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12">
+                <div class="row new_fullmargin">
+                    <div class="col-1 col-sm-1">&nbsp; </div>
+                    <div class="col-5 col-sm-5">
+                        <div class="new_notebox">
+                            <img onclick="NotificationList()" src="~/Content/WebView/HomePage/images/notification.png" width="30" class="leftim">
+                            @*<span class="new_cricle">1</span><br>*@
+                            <span class="notefont">notification</span>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-5" >
+                            <div class="new_noteboxright" >                             
+                                <img onclick="leaderboard('https://www.skillmuni.in/SkillmuniUniversityApiBeta/DashboardWebView/FootballLeaderBoard?UID=@uid&OID=@oid')" src="~/Content/WebView/HomePage/images/trophy.png" width="30" class="rightim">                               
+                                <img onclick="leaderboard('https://www.skillmuni.in/SkillmuniUniversityApiBeta/DashboardWebView/FootballLeaderBoard?UID=@uid&OID=@oid')" src="~/Content/WebView/HomePage/images/arrow.png" width="20" class="rightim"><br>
+                                <span class="notefont">leaderboard</span>                                  
+                            </div>
+
+                     
+                    </div>
+                    <div class="col-1 col-sm-1">&nbsp; </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12" align="center">
+                <div class="new_academyimg">
+                    <img onclick="myacademy()" src="~/Content/WebView/HomePage/images/academy.png">
+                </div>
+            </div>
+        </div>
+        <script src="~/Content/WebView/HomePage/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+

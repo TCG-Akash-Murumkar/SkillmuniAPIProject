@@ -1,0 +1,364 @@
+﻿
+@{
+    ViewBag.Title = "RewardsPage";
+    Layout = null;
+
+
+    int uid = (int)ViewData["UID"];
+    int oid = (int)ViewData["OID"];
+    int used_money = (int)ViewData["used_money"];
+
+    int TotalCurrency = (int)ViewData["TotalCurrency"];
+    m2ostnextservice.Models.LeaderBoardResponse Leader = (m2ostnextservice.Models.LeaderBoardResponse)ViewData["Leader"];
+
+    List<m2ostnextservice.Models.tbl_badge_master> badgemaster = (List<m2ostnextservice.Models.tbl_badge_master>)ViewData["badgemaster"];
+    string base64Currency = (string)ViewData["base64Currency"];
+
+    string redirecturl = "https://www.skillmuni.in/SkillmuniUniversityapiBeta/DashboardWebView/RewardsRedirectPage?UID=";
+    string posturl = "https://www.skillmuni.in/SkillmuniUniversityapiBeta/DashboardWebView/RewardsPost";
+    string badge_base = "https://www.skillmuni.in/SkillMuniUniversityCMSBeta/Content/SKILLMUNI_DATA/badge/";
+
+}
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" media="all" href="~/Content/Rewards/css/stylesheet.css" />
+    <link rel="stylesheet" media="all" href="~/Content/Rewards/css/font-awesome.min.css" />
+    <link rel="stylesheet" media="all" href="~/Content/Rewards/css/SKUL_01.css" />
+    <link rel="stylesheet" media="all" href="~/Content/Rewards/css/bootstrap.min.css" />
+    <style>
+        body {
+            overflow: auto !important;
+        }
+
+        .new_topblankspace {
+            width: 100%;
+            height: 100%;
+            background: url(../../Content/Rewards/images/topgray.png) no-repeat top center fixed;
+            background-attachment: fixed;
+            background-size: contain;
+            height: 72px;
+            background-color: transparent;
+            background-repeat: no-repeat;
+        }
+
+        .new_topfull {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+            padding-top: 2%;
+            position: fixed;
+        }
+
+
+        .newrewardsmainbtn {
+            width: 98%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+            height: 45px;
+            z-index: 1030;
+            font-size: 12px !important;
+            font-family: 'Myriad Pro Bold';
+            position: fixed;
+            margin-left: 1%;
+        }
+
+        .btn-newrewards {
+            color: #767171;
+            background-color: #FFFFFF;
+            background-image: none;
+            width: 50%;
+            float: left;
+            padding: 10px 0px;
+            border: 0px;
+            font-size: 14px;
+            outline: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+            .btn-newrewards.newrewardsactive {
+                color: #767171;
+                background-color: #FFFFFF;
+                background-image: none;
+                width: 50%;
+            }
+
+        .newrewardsmain {
+            width: 98%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+            overflow: auto !important;
+            margin-top: 45px;
+            height: 500px;
+        }
+
+        .newrewardsmainnner {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            border: 0px;
+            background: #FFF;
+            color: #999999;
+            z-index: 1030;
+            font-size: 14px !important;
+            font-family: 'Myriad Pro Bold';
+            /*padding-top:10px;*/
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar {
+            width: 2px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0);
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+
+            ::-webkit-scrollbar-thumb:window-inactive {
+                background: rgba(255,0,0,0.4);
+            }
+
+        .newrewardsmain_details {
+            width: 100%;
+            margin: 0 auto;
+            padding: 5px;
+            border: 0px;
+            /*background:#FFF;*/
+            color: #999999;
+            z-index: 1030;
+            font-size: 14px !important;
+            font-family: 'Myriad Pro Regular';
+            padding-top: 10px;
+            margin-bottom: 5px;
+        }
+
+            .newrewardsmain_details table tr td {
+                padding: 5px 0px;
+                vertical-align: top;
+                font-family: 'Myriad Pro Regular';
+            }
+
+        .tdfontcolor {
+            color: #333;
+            font-weight: bold;
+            font-family: 'Myriad Pro Bold' !important;
+            padding-left: 5px !important;
+            width: 220px !important;
+        }
+
+        .indrupee {
+            font-family: 'itf_rupeeregular';
+            color: #FFF;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .rupeebtn {
+            background: #3c424e;
+            border-radius: 8px;
+            padding: 2px 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: bold;
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rupeebtnred {
+            background: #3c424e;
+            border-radius: 8px;
+            padding: 3px 10px;
+            color: #FFF;
+            font-size: 16px;
+            font-weight: bold;
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .animated {
+            animation-duration: 2.5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+        }
+
+        @@keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse {
+            animation-name: pulse;
+            animation-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="newrewardsmain_details">
+                    <div class="newrewardsmainnner" style="padding-top:10px;">
+                        <table width="100%" style="margin:0 auto; text-align:center; color:#3c424e;">
+                            <!--<tr>
+                                <td colspan="3" style="color:#FFF; font-size:18px; background:#585e6a; text-indent:5px; text-align:left;font-family: 'Myriad Pro Bold'!important; padding:7px 0px; margin:0px;border-top-left-radius:5px;border-top-right-radius:5px">JOB DETAILS</td>
+                            </tr>-->
+                            <tr>
+                                <td colspan="3" align="center"><img src="~/Content/Rewards/images/gift box.png" width="230" class="animated pulse"></td>
+                            </tr>
+                            <tr>
+                                @foreach (var itm in badgemaster)
+                                {
+                                    <td><img src="@badge_base@itm.badge_logo" width="80"></td>
+
+                                }
+                                @*<td><img src="~/Content/Rewards/images/rewards_03.png" width="80"></td>
+                                    <td><img src="~/Content/Rewards/images/rewards_02.png" width="80"></td>
+                                    <td><img src="~/Content/Rewards/images/rewards_04.png" width="80"></td>*@
+                            </tr>
+                            <tr>
+                                @foreach (var itm in badgemaster)
+                                {
+                                    <td><b>@itm.eligiblescore</b> <br> EARNED</td>
+
+
+
+
+
+                                }
+
+
+                                @*<td><b>5</b> <br> EARNED</td>*@
+                                @*<td><b>5</b> <br> EARNED</td>
+                                    <td><b>0</b> <br> EARNED</td>*@
+                            </tr>
+                            <tr>
+                                @foreach (var itm in badgemaster)
+                                {
+                                    <td><div class="rupeebtn"><span class="indrupee">I</span><span>@itm.money_value</span></div></td>
+
+
+
+
+                                }
+
+
+
+
+
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <a style="text-decoration: none;" href="http://kbba.klippd.in/?clientID=858530&key=r9e2nCeEClach7hWnoMw&userID=@Leader.id_user&rewards=@base64Currency&username=@Leader.UserName&postURL=@posturl&returnURL=@redirecturl@uid&PartnerCode=0&EmailAddress=@Leader.MailId">
+                                        <div class="rupeebtnred"><span style="font-size:20px;">REDEEM</span></div>
+                                    </a>
+
+
+
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><div class=""><span style="font-size:20px;">Cash Redeemed- <span style="color:#3c424e" class="indrupee">I</span>@used_money</span></div></td>
+
+                            </tr>
+                            <tr>
+
+                                <td colspan="3"><div class=""><span style="font-size:20px;">Available balance- <span style="color:#3c424e" class="indrupee">I</span>@TotalCurrency</span></div></td>
+                            </tr>
+                            <!--<tr>
+                                <td valign="top" class="tdfontcolor">Qualification</td>
+                                <td valign="top">:</td>
+                                <td valign="top">Graduate</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Experience</td>
+                                <td valign="top">:</td>
+                                <td valign="top">1 to 2 years</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Job Points Required</td>
+                                <td valign="top">:</td>
+                                <td valign="top">50</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Job Info</td>
+                                <td valign="top">:</td>
+                                <td valign="top">Software development based on requirement, write, test, maintain & debug code</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Location </td>
+                                <td valign="top">:</td>
+                                <td valign="top">Hadapsar| Pune Maharashtra</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Contact Person</td>
+                                <td valign="top">:</td>
+                                <td valign="top">anbu | 9962255581</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Job Openings</td>
+                                <td valign="top">:</td>
+                                <td valign="top">1</td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Your Job Points</td>
+                                <td valign="top">:</td>
+                                <td><strong style="color:#090;">55</strong> &nbsp;&nbsp;&nbsp; Match &nbsp; <img src="images/checkdel.png" width="20"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="tdfontcolor">Upload CV</td>
+                                <td valign="top">:</td>
+                                <td><input type="file" style="border-radius:5px;"></td>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3" valign="top" align="center" class="tdfontcolor"><button style=" border:0px; outline:none;background: transparent;"><img src="images/btnapply1.png" width="100"></button></td>
+                            </tr>
+                            -->
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
+
+

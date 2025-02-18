@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b027756249b8448199e1d818508708c3" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="m2ostnextservice.downtime_log" Width="1.5" PointX="0.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.error_log" Width="1.5" PointX="2.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.masti_parent_teacher_mapping" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.masti_teacher_galleryfolder" Width="1.5" PointX="0.75" PointY="8.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.masti_teacher_photo_mapping" Width="1.5" PointX="0.75" PointY="11.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_game_element_weightage" Width="1.5" PointX="12.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_program_assessment_scoring" Width="1.5" PointX="19.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_program_content_summary" Width="1.5" PointX="19.75" PointY="16.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_program_kpi_score" Width="1.5" PointX="21.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_program_kpi_weightage" Width="1.5" PointX="21.75" PointY="6.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_program_log" Width="1.5" PointX="21.75" PointY="15.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_report_game_process_path" Width="1.5" PointX="0.75" PointY="24.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.sc_report_game_process_score" Width="1.5" PointX="22.75" PointY="10.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_action" Width="1.5" PointX="15.5" PointY="22.5" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment" Width="1.5" PointX="5.25" PointY="9.625" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_answer" Width="1.5" PointX="17.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_audit" Width="1.5" PointX="12.75" PointY="24.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_categoty_mapping" Width="1.5" PointX="7.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_general" Width="1.5" PointX="10.75" PointY="17.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_header" Width="1.5" PointX="20" PointY="20.5" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_index" Width="1.5" PointX="22.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_mapping" Width="1.5" PointX="19.75" PointY="24.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_push" Width="1.5" PointX="22.75" PointY="22.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_question" Width="1.5" PointX="17.75" PointY="20.375" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_scoring_key" Width="1.5" PointX="17.75" PointY="25.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_sheet" Width="1.5" PointX="7.5" PointY="15" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_theme" Width="1.5" PointX="23.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessment_user_assignment" Width="1.5" PointX="23.75" PointY="5.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assessmnt_log" Width="1.5" PointX="23.75" PointY="15.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assignment_role_assessment" Width="1.5" PointX="21.75" PointY="25.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assignment_role_content" Width="1.5" PointX="23.75" PointY="25.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_assignment_role_program" Width="1.5" PointX="24.75" PointY="9.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_authcode" Width="1.5" PointX="14.75" PointY="26.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_banner" Width="1.5" PointX="5.25" PointY="22.375" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_answer" Width="1.5" PointX="24.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_audit" Width="1.5" PointX="25.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_b2c_index" Width="1.5" PointX="25.75" PointY="13.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_b2c_right_audit" Width="1.5" PointX="25.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_b2c_score_audit" Width="1.5" PointX="25.75" PointY="27.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_category" Width="1.5" PointX="25.75" PointY="16.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_category_mapping" Width="1.5" PointX="26.75" PointY="7.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_index" Width="1.5" PointX="26.75" PointY="10.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_log" Width="1.5" PointX="27.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_master" Width="1.5" PointX="0.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_master_body" Width="1.5" PointX="27.75" PointY="13.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_master_template" Width="1.5" PointX="19.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_metadata" Width="1.5" PointX="27.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_progdist_mapping" Width="1.5" PointX="21.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_question" Width="1.5" PointX="27.75" PointY="26.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_question_complexity" Width="1.5" PointX="28.75" PointY="6.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_question_mapping" Width="1.5" PointX="28.75" PointY="9.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_question_metadata" Width="1.5" PointX="28.75" PointY="18.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_read_status" Width="1.5" PointX="29.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_status" Width="1.5" PointX="29.75" PointY="13.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_subcategory" Width="1.5" PointX="29.75" PointY="21.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_tile_category_mapping" Width="1.5" PointX="29.75" PointY="24.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_user_assignment" Width="1.5" PointX="23.75" PointY="31.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_business_type" Width="1.5" PointX="0.75" PointY="16.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category" Width="1.5" PointX="5.25" PointY="33.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_associantion" Width="1.5" PointX="7.5" PointY="30.5" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_default" Width="1.5" PointX="29.75" PointY="27.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_heading" Width="1.5" PointX="7.5" PointY="26.5" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_heading_default" Width="1.5" PointX="25.75" PointY="31.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_order" Width="1.5" PointX="30.75" PointY="6.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_tiles" Width="1.5" PointX="5.25" PointY="25.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_category_tiles_default" Width="1.5" PointX="30.75" PointY="17.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_childinformation" Width="1.5" PointX="27.75" PointY="32.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_cms_role_action" Width="1.5" PointX="30.75" PointY="10.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_cms_role_action_mapping" Width="1.5" PointX="29.75" PointY="32.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_cms_roles" Width="1.5" PointX="31.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_cms_users" Width="1.5" PointX="31.75" PointY="13.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_color_config" Width="1.5" PointX="15.75" PointY="33.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_color_config_flag" Width="1.5" PointX="17.75" PointY="33.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_answer" Width="1.5" PointX="12.75" PointY="5.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_answer_default" Width="1.5" PointX="31.75" PointY="21.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_answer_steps" Width="1.5" PointX="15" PointY="4.625" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_banner" Width="1.5" PointX="10.5" PointY="22.375" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_counters" Width="1.5" PointX="19.75" PointY="33.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_default" Width="1.5" PointX="31.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_footer" Width="1.5" PointX="6" PointY="41.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_header" Width="1.5" PointX="6" PointY="38.625" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_header_footer" Width="1.5" PointX="8.25" PointY="1.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_level" Width="1.5" PointX="0.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_link" Width="1.5" PointX="32.75" PointY="5.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_metadata" Width="1.5" PointX="15" PointY="15.625" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_organization_mapping" Width="1.5" PointX="10.5" PointY="26.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_organization_mapping_default" Width="1.5" PointX="32.75" PointY="8.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_program_mapping" Width="1.5" PointX="8.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_right_association" Width="1.5" PointX="8.25" PointY="18.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_role_mapping" Width="1.5" PointX="10.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_type" Width="1.5" PointX="15.75" PointY="12.5" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_type_link" Width="1.5" PointX="18" PointY="12.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_content_user_assisgnment" Width="1.5" PointX="12.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_csst_role" Width="1.5" PointX="5.25" PointY="6.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_device_type" Width="1.5" PointX="15.5" PointY="19.625" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_feedback_bank" Width="1.5" PointX="11.5" PointY="29.875" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_feedback_bank_link" Width="1.5" PointX="13.75" PointY="30.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_feedback_data" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_creation" Width="1.5" PointX="31.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_group" Width="1.5" PointX="32.75" PointY="17.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_group_association" Width="1.5" PointX="33.75" PointY="11.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_group_participatant" Width="1.5" PointX="33.75" PointY="21.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_path" Width="1.5" PointX="21.75" PointY="35.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_phase" Width="1.5" PointX="33.75" PointY="25.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_process_path" Width="1.5" PointX="23.75" PointY="35.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_game_solo" Width="1.5" PointX="33.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_industry" Width="1.5" PointX="0.75" PointY="19.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_kpi_grid" Width="1.5" PointX="33.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_kpi_master" Width="1.5" PointX="33.75" PointY="33.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_kpi_program_scoring" Width="1.5" PointX="34.75" PointY="5.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_menu" Width="1.5" PointX="34.75" PointY="16.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_menu_default" Width="1.5" PointX="17.75" PointY="36.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_menu_type" Width="1.5" PointX="35.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_mutthi_mein_sitare_milestone" Width="1.5" PointX="0.75" PointY="37.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_mutthi_mein_sitare_skill" Width="1.5" PointX="35.75" PointY="9.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_mutthi_skill_development_detail" Width="1.5" PointX="35.75" PointY="12.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_mutthi_skill_milestone_detail" Width="1.5" PointX="14.75" PointY="37.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_mutthimeinsitare_master" Width="1.5" PointX="35.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_news_ticker" Width="1.5" PointX="35.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_non_disclousure_clause_content" Width="1.5" PointX="35.75" PointY="27.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_non_disclousure_clause_log" Width="1.5" PointX="35.75" PointY="31.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_notification" Width="1.5" PointX="35.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_notification_config" Width="1.5" PointX="10.75" PointY="38.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_notification_pre_config" Width="1.5" PointX="37.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_notification_reminder" Width="1.5" PointX="36.75" PointY="15.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_offline_expiry" Width="1.5" PointX="10.75" PointY="15" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_organisation_banner" Width="1.5" PointX="5.25" PointY="30.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_organisation_banner_links" Width="1.5" PointX="2.75" PointY="39.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_organisation_status" Width="1.5" PointX="37.75" PointY="7.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_organization" Width="1.5" PointX="3" PointY="17.375" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_profile" Width="1.5" PointX="37.75" PointY="10.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_reminder_notification_config" Width="1.5" PointX="16.75" PointY="39.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_reminder_notification_log" Width="1.5" PointX="37.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_report_content" Width="1.5" PointX="18.75" PointY="39.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_report_login_log" Width="1.5" PointX="37.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_role" Width="1.5" PointX="5.25" PointY="19.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_role_user_mapping" Width="1.5" PointX="37.75" PointY="26.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_rs_type_qna" Width="1.5" PointX="37.75" PointY="29.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_saksham_assessment_detail" Width="1.5" PointX="37.75" PointY="34.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_saksham_assessment_master" Width="1.5" PointX="33.75" PointY="39.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_saksham_assessment_milestone_detail" Width="1.5" PointX="35.75" PointY="39.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_saksham_assessment_skill_detail" Width="1.5" PointX="37.75" PointY="38.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_scheduled_event" Width="1.5" PointX="20.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_scheduled_event_subscription_log" Width="1.5" PointX="22.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_skill_development" Width="1.5" PointX="38.75" PointY="15.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_skill_milestone" Width="1.5" PointX="24.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_subscriptions" Width="1.5" PointX="10.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_survey" Width="1.5" PointX="17.25" PointY="7.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_survey_bank" Width="1.5" PointX="17.25" PointY="3.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_survey_bank_link" Width="1.5" PointX="19.5" PointY="7.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_survey_data" Width="1.5" PointX="20.5" PointY="11.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_task" Width="1.5" PointX="26.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_temp_user_upload" Width="1.5" PointX="28.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_themes" Width="1.5" PointX="30.75" PointY="40.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user" Width="1.5" PointX="8.5" PointY="8.25" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_data" Width="1.5" PointX="17.75" PointY="15.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_device_link" Width="1.5" PointX="39.75" PointY="2.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_gcm_log" Width="1.5" PointX="39.75" PointY="5.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_login_log" Width="1.5" PointX="39.75" PointY="8.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_programs" Width="1.5" PointX="39.75" PointY="11.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_zone" Width="1.5" PointX="12.75" PointY="41.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_user_zone_master" Width="1.5" PointX="39.75" PointY="19.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_version_control" Width="1.5" PointX="39.75" PointY="23.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_version_control_ios" Width="1.5" PointX="39.75" PointY="26.125" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_welcome_gif" Width="1.5" PointX="39.75" PointY="29.125" />
+        <AssociationConnector Association="m2ostnextservice.fk3_tbl_user_data" />
+        <AssociationConnector Association="m2ostnextservice.fk_assesment_sht2" />
+        <AssociationConnector Association="m2ostnextservice.fk_assessment1" />
+        <AssociationConnector Association="m2ostnextservice.fk_assessment_header3" />
+        <AssociationConnector Association="m2ostnextservice.fk_assess_gene1" />
+        <AssociationConnector Association="m2ostnextservice.fk_assess_gene2" />
+        <AssociationConnector Association="m2ostnextservice.fk_assess_gene3" />
+        <AssociationConnector Association="m2ostnextservice.fk_assessment_header1" />
+        <AssociationConnector Association="m2ostnextservice.fk_assessment_header2" />
+        <AssociationConnector Association="m2ostnextservice.fk_assesment_sht1" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_bann2" />
+        <AssociationConnector Association="m2ostnextservice.fk_org_banner" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_organization" />
+        <AssociationConnector Association="m2ostnextservice.fk_asso3" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_org_cont2" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_category" />
+        <AssociationConnector Association="m2ostnextservice.fk_asso1" />
+        <AssociationConnector Association="m2ostnextservice.fk_head1" />
+        <AssociationConnector Association="m2ostnextservice.fk_tile1" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_bann1" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_hf1" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_org_2" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_org_cont3" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_subscriptions" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_content_answer_steps" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_content_metadata" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_content_type_link" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_survey" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_survey" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_hf2" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_hf3" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_org_cont1" />
+        <AssociationConnector Association="m2ostnextservice.fk_content_org_1" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_content_type_link" />
+        <AssociationConnector Association="m2ostnextservice.fk_org_csst" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_user_data" />
+        <AssociationConnector Association="m2ostnextservice.FK2_tbl_feedback_bank_link" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_feedback_data" />
+        <AssociationConnector Association="m2ostnextservice.fk3_tbl_feedback_data" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_organization" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_offline_expiry" />
+        <AssociationConnector Association="m2ostnextservice.fk_org_ban" />
+        <AssociationConnector Association="m2ostnextservice.tbl_role1" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_subscriptions" />
+        <AssociationConnector Association="m2ostnextservice.FK1_tbl_survey_bank_link" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_survey_data" />
+        <AssociationConnector Association="m2ostnextservice.FK2_tbl_survey_bank_link" />
+        <AssociationConnector Association="m2ostnextservice.fk2_tbl_survey_data" />
+        <AssociationConnector Association="m2ostnextservice.fk3_tbl_survey_data" />
+        <AssociationConnector Association="m2ostnextservice.fk1_tbl_user_data" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_category_tile" Width="1.5" PointX="40.375" PointY="32.75" />
+        <EntityTypeShape EntityType="m2ostnextservice.tbl_brief_version_control" Width="1.5" PointX="8.375" PointY="5.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
