@@ -1,0 +1,5 @@
+timestamp : 29-07-2019 15:05:07 : PostSocialEntrepreneurship : Object reference not set to an instance of an object.
+timestamp : 29-07-2019 15:05:33 : PostSocialEntrepreneurship : Unknown column 'product' in 'field list'
+timestamp : 29-07-2019 15:06:11 : PostSocialEntrepreneurship : Object reference not set to an instance of an object.
+timestamp : 29-07-2019 15:09:55 : PostSocialEntrepreneurship : Unknown column 'product' in 'field list'
+timestamp : 29-07-2019 15:11:06 : PostSocialEntrepreneurship : Unknown column 'id_social_entrepreneurship' in 'field list'

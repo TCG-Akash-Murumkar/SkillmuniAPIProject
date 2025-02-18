@@ -1,0 +1,1204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\SkillmuniUniversityService\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Browsers/qt.browser">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/HelpPage.css">
+      <publishTime>11/19/2015 00:39:02</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Api.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ApiGroup.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/CollectionModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ComplexTypeModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/DictionaryModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/EnumTypeModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/HelpPageApiModel.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ImageSample.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/InvalidSample.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/KeyValuePairModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/ModelDescriptionLink.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Parameters.cshtml">
+      <publishTime>03/21/2016 03:12:32</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/Samples.cshtml">
+      <publishTime>11/19/2015 00:39:04</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/SimpleTypeModelDescription.cshtml">
+      <publishTime>03/21/2016 03:12:34</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/DisplayTemplates/TextSample.cshtml">
+      <publishTime>03/21/2016 03:12:34</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/Index.cshtml">
+      <publishTime>03/21/2016 03:12:34</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Help/ResourceModel.cshtml">
+      <publishTime>03/21/2016 03:12:34</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Shared/_Layout.cshtml">
+      <publishTime>11/19/2015 00:39:04</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/Web.config">
+      <publishTime>11/19/2015 00:39:02</publishTime>
+    </File>
+    <File Include="Areas/HelpPage/Views/_ViewStart.cshtml">
+      <publishTime>11/19/2015 00:39:02</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/19/2015 00:38:50</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>11/19/2015 00:38:50</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/19/2015 00:38:52</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>06/20/2019 17:39:40</publishTime>
+    </File>
+    <File Include="bin/m2ostnextservice.dll">
+      <publishTime>04/13/2020 08:51:45</publishTime>
+    </File>
+    <File Include="bin/m2ostnextservice.pdb">
+      <publishTime>04/13/2020 08:51:45</publishTime>
+    </File>
+    <File Include="bin/m2ostSevice.dll">
+      <publishTime>01/16/2016 14:19:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>12/18/2013 00:13:54</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF5.dll">
+      <publishTime>12/18/2013 00:13:58</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>12/18/2013 00:14:04</publishTime>
+    </File>
+    <File Include="bin/MySql.Web.dll">
+      <publishTime>12/18/2013 00:13:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/03/2014 20:33:56</publishTime>
+    </File>
+    <File Include="bin/Rotativa.dll">
+      <publishTime>03/24/2015 15:16:18</publishTime>
+    </File>
+    <File Include="bin/skillmuniwebservice.dll">
+      <publishTime>01/04/2016 23:06:23</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>11/28/2018 13:00:36</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>11/28/2018 12:58:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>11/28/2018 13:01:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/19/2015 00:38:52</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/19/2015 00:38:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/19/2015 00:38:54</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/19/2015 00:38:56</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/19/2015 00:38:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/19/2015 00:39:06</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/19/2015 00:39:06</publishTime>
+    </File>
+    <File Include="Content/eBody.html">
+      <publishTime>08/01/2016 17:02:30</publishTime>
+    </File>
+    <File Include="Content/images/avatar.jpg">
+      <publishTime>02/05/2019 15:34:47</publishTime>
+    </File>
+    <File Include="Content/images/SkinnySeveralAsianlion.gif">
+      <publishTime>01/25/2019 19:21:33</publishTime>
+    </File>
+    <File Include="Content/Rewards/css/itf_rupee-webfont.woff">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/css/itf_rupee-webfont.woff2">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/css/stylesheet.css">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/images/gift box.png">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/images/rewards_02.png">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/images/rewards_03.png">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Rewards/images/rewards_04.png">
+      <publishTime>04/04/2019 11:10:22</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/19/2015 00:39:06</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/css/font-awesome.min.css">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/fonts/fontawesome-webfont.eot">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/fonts/fontawesome-webfont.ttf">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/fonts/fontawesome-webfont.woff">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/fonts/FontAwesome.otf">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/images/2.jpg">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/images/Invite_FOE_bg1.png">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/Assessment/images/qrcode.jpg">
+      <publishTime>02/01/2019 12:45:01</publishTime>
+    </File>
+    <File Include="Content/WebView/css/bebasneue-regular-webfont.woff">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/bebasneue-regular-webfont.woff2">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/bootstrap.min.css">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/font-awesome.min.css">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/haettenschweiler-regular-webfont.woff">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/haettenschweiler-regular-webfont.woff2">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/css/SKUL.css">
+      <publishTime>02/02/2019 18:03:50</publishTime>
+    </File>
+    <File Include="Content/WebView/css/SKUL_01.css">
+      <publishTime>02/02/2019 17:30:33</publishTime>
+    </File>
+    <File Include="Content/WebView/css/stylesheet.css">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/fonts/bebasneue-regular-webfont.woff">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/fonts/bebasneue-regular-webfont.woff2">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/fonts/haettenschweiler-regular-webfont.woff">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/fonts/haettenschweiler-regular-webfont.woff2">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/fonts/stylesheet.css">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/bebasneue-regular-webfont.woff">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/bebasneue-regular-webfont.woff2">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/bootstrap.min.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/font-awesome.min.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/fontawesome-webfont.eot">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/fontawesome-webfont.svg">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/fontawesome-webfont.ttf">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/fontawesome-webfont.woff">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/fontawesome-webfont.woff2">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/FontAwesome.otf">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/SKUL.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/SKUL_01.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/SKUL_02.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/css/stylesheet.css">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/bebasneue-regular-webfont.woff">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/bebasneue-regular-webfont.woff2">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/fontawesome-webfont.svg">
+      <publishTime>02/02/2019 15:22:51</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/fontawesome-webfont.woff2">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/FontAwesome.otf">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/fonts/stylesheet.css">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/1.jpg">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/2.jpg">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/3.jpg">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/academy.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/arrow.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/assessment.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/assessment_01.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/ball.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/ball_01.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/bg.jpg">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/bg_01.jpg">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/book mark.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/bookmark_01.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/boxbg.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/boxbgorange.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/chat png white.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/chat.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/credits.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/credits_01.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/defender.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/dfdfdf.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/football.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/footballnew.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/footer.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/green.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/green1.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/head.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/jobs icon.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/jobs.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/jobsicon_01.png">
+      <publishTime>02/02/2019 15:22:52</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/jobsnew.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/library png.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/library.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/logomail.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/lower buttons.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/mailbox.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/mainbg.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/mainbg1.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/namephoto.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/notebg.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/notification.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/orange button.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/photo.jpg">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/photo1.jpg">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/plus.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/plus_01.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/pop up.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/red.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/rewards.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/rewards_01.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/rewards_bg.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/rupee.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/scoremorebutton.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/scoremorebutton1.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/setting.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/tabarrow.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/topgray.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/topgray12.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/topgreen.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/trophy.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/unread icon.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/unreadicon_01.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/wallet icon.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/images/walleticon_01.png">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/HomePage/js/bootstrap.min.js">
+      <publishTime>02/02/2019 15:22:53</publishTime>
+    </File>
+    <File Include="Content/WebView/images/1.jpg">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/2.jpg">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/3.jpg">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/academy.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/arrow.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/bg.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/bg_001.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/bg_10.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/boxbg.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/chat png white.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/chat.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/defender.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/football.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/footer.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/green.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/green1.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/head.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/jobpoint.png">
+      <publishTime>02/04/2019 12:59:33</publishTime>
+    </File>
+    <File Include="Content/WebView/images/jobs.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/jobsnew.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/library png.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/library.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/logomail.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/mailbox.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/namephoto.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/notebg.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/notification.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/photo.jpg">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/photo1.jpg">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/images/trophy.png">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/js/bootstrap.min.js">
+      <publishTime>01/22/2019 12:07:47</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/bebasneue-regular-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/bebasneue-regular-webfont.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/bootstrap.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/font-awesome.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/fontawesome-webfont.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/fontawesome-webfont.svg">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/fontawesome-webfont.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/fontawesome-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/fontawesome-webfont.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/FontAwesome.otf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/SKUL_02.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/css/stylesheet.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/bebasneue-regular-webfont.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/bebasneue-regular-webfont.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/fontawesome-webfont.svg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/fontawesome-webfont.woff2">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/FontAwesome.otf">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/fonts/stylesheet.css">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/1.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/2.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/3.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/academy.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/arrow.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/assessment.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/assessment_01.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/ball.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/ball_01.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/bg.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/bg_01.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/book mark.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/bookmark_01.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/boxbg.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/boxbgorange.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/chat png white.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/chat.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/credits.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/credits_01.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/defender.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/football.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/footer.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/green.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/green1.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/head.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/jobs icon.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/jobs.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/jobsicon_01.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/jobsnew.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/library png.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/library.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/logomail.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/lower buttons.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/mailbox.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/mainbg.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/mainbg1.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/namephoto.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/notebg.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/notification.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/orange button.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/photo.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/photo1.jpg">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/pop up.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/rewards.png">
+      <publishTime>01/29/2019 19:08:01</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/rewards_01.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/scoremorebutton.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/scoremorebutton1.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/trophy.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/unread icon.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/unreadicon_01.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/wallet icon.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/images/walleticon_01.png">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/MyDashboard/js/bootstrap.min.js">
+      <publishTime>01/29/2019 19:08:02</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/bebasneue-regular-webfont.woff">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/bebasneue-regular-webfont.woff2">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/bootstrap.min.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/font-awesome.min.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/fontawesome-webfont.eot">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/fontawesome-webfont.svg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/fontawesome-webfont.ttf">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/fontawesome-webfont.woff">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/fontawesome-webfont.woff2">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/FontAwesome.otf">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/SKUL.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/SKUL_01.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/SKUL_02.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/css/stylesheet.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/bebasneue-regular-webfont.woff">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/bebasneue-regular-webfont.woff2">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/fontawesome-webfont.svg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/fontawesome-webfont.woff2">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/FontAwesome.otf">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/fonts/stylesheet.css">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/1.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/2.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/3.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/academy.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/arrow.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/assessment.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/assessment_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/ball.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/ball_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/bg.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/bg_01.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/book mark.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/bookmark_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/boxbg.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/boxbgorange.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/chat png white.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/chat.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/credits.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/credits_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/defender.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/football.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/footer.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/green.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/green1.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/head.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/jobs icon.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/jobs.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/jobsicon_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/jobsnew.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/library png.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/library.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/logomail.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/lower buttons.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/mailbox.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/mainbg.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/mainbg1.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/namephoto.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/notebg.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/notification.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/orange button.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/photo.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/photo1.jpg">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/pop up.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/rewards.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/rewards_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/rewards_bg.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/rupee.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/scoremorebutton.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/scoremorebutton1.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/tabarrow.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/trophy.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/unread icon.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/unreadicon_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/wallet icon.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/images/walleticon_01.png">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="Content/WebView/Rewards/js/bootstrap.min.js">
+      <publishTime>01/31/2019 13:32:54</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/19/2015 00:38:58</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/19/2015 00:39:08</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/19/2015 00:39:08</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/19/2015 00:39:08</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/19/2015 00:39:08</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="m2ostService.edmx.diagram">
+      <publishTime>10/27/2018 14:47:44</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/libeay32.dll">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/libgcc_s_dw2-1.dll">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/mingwm10.dll">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/README.txt">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/ssleay32.dll">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Rotativa/wkhtmltopdf.exe">
+      <publishTime>11/04/2019 15:10:49</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>10/17/2019 14:10:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>11/19/2015 00:39:10</publishTime>
+    </File>
+    <File Include="skillmuni_db.edmx.diagram">
+      <publishTime>01/04/2016 22:11:00</publishTime>
+    </File>
+    <File Include="skillmuni_dbEntities.edmx.diagram">
+      <publishTime>08/21/2015 17:45:07</publishTime>
+    </File>
+    <File Include="skillmuni_dbModel.edmx.diagram">
+      <publishTime>07/02/2015 20:59:30</publishTime>
+    </File>
+    <File Include="Views/CVBuilder/GenerateResume.cshtml">
+      <publishTime>11/07/2019 16:17:31</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/APIREstrictionPage.cshtml">
+      <publishTime>04/03/2019 15:02:13</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/AssessmentSheet.cshtml">
+      <publishTime>01/16/2020 17:12:05</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootballLeaderBoard.cshtml">
+      <publishTime>10/29/2019 16:31:20</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootBallLeaderBoardCollegePartialView.cshtml">
+      <publishTime>10/18/2019 16:32:11</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootBallLeaderBoardCountryPartialView.cshtml">
+      <publishTime>10/18/2019 16:38:52</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootballLeaderBoardForCollege.cshtml">
+      <publishTime>10/18/2019 16:39:25</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootballLeaderBoardForCountry.cshtml">
+      <publishTime>10/18/2019 16:40:24</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FootballLeaderboardPartialView.cshtml">
+      <publishTime>10/18/2019 16:32:05</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/FormSub.cshtml">
+      <publishTime>05/04/2019 15:51:50</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/Index.cshtml">
+      <publishTime>05/04/2019 15:57:44</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/MyDashboard.cshtml">
+      <publishTime>02/08/2019 18:04:54</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/ProfileHome.cshtml">
+      <publishTime>04/15/2019 14:01:10</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/RewardsPage.cshtml">
+      <publishTime>04/16/2019 11:45:36</publishTime>
+    </File>
+    <File Include="Views/DashboardWebView/RewardsRedirectPage.cshtml">
+      <publishTime>02/08/2019 16:42:14</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/19/2015 00:39:12</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/19/2015 00:39:12</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/19/2015 00:39:12</publishTime>
+    </File>
+    <File Include="Views/UtilityQuery/Index.cshtml">
+      <publishTime>01/19/2020 09:28:52</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>03/21/2016 05:08:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/19/2015 00:39:12</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/13/2020 08:51:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

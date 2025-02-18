@@ -1,0 +1,24 @@
+Log Entry : 23-07-2019 18:27:54 : -------------------MyDashboard-------------------
+Log Entry : 23-07-2019 18:27:54 : ex m :Object reference not set to an instance of an object.
+Log Entry : 23-07-2019 18:27:54 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf) in D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\Controllers\getCEMyDashboardController.cs:line 34
+Log Entry : 23-07-2019 18:27:54 : -------------------end-------------------
+Log Entry : 23-07-2019 18:28:12 : -------------------MyDashboard-------------------
+Log Entry : 23-07-2019 18:28:12 : ex m :Object reference not set to an instance of an object.
+Log Entry : 23-07-2019 18:28:12 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf) in D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\Controllers\getCEMyDashboardController.cs:line 34
+Log Entry : 23-07-2019 18:28:12 : -------------------end-------------------
+Log Entry : 23-07-2019 18:28:19 : -------------------MyDashboard-------------------
+Log Entry : 23-07-2019 18:28:19 : ex m :Object reference not set to an instance of an object.
+Log Entry : 23-07-2019 18:28:19 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf) in D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\Controllers\getCEMyDashboardController.cs:line 34
+Log Entry : 23-07-2019 18:28:19 : -------------------end-------------------
+timestamp : 23-07-2019 18:28:44 : -------------------MyDashboard-------------------
+timestamp : 23-07-2019 18:29:05 : ex m :Object reference not set to an instance of an object.
+timestamp : 23-07-2019 18:29:05 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf)
+timestamp : 23-07-2019 18:29:05 : -------------------end-------------------
+timestamp : 23-07-2019 18:29:09 : -------------------MyDashboard-------------------
+timestamp : 23-07-2019 18:29:09 : ex m :Object reference not set to an instance of an object.
+timestamp : 23-07-2019 18:29:09 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf)
+timestamp : 23-07-2019 18:29:09 : -------------------end-------------------
+timestamp : 23-07-2019 18:29:10 : -------------------MyDashboard-------------------
+timestamp : 23-07-2019 18:29:10 : ex m :Object reference not set to an instance of an object.
+timestamp : 23-07-2019 18:29:10 : ex s :   at m2ostnextservice.Controllers.getCEMyDashboardController.Get(Int32 UID, Int32 OID, String trf)
+timestamp : 23-07-2019 18:29:10 : -------------------end-------------------

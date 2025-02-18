@@ -1,0 +1,276 @@
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\m2ostnextservice.dll.config
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\m2ostnextservice.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\m2ostnextservice.pdb
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Antlr3.Runtime.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\EntityFramework.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\itextsharp.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\MySql.Data.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\MySql.Data.Entity.EF5.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\MySql.Web.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Newtonsoft.Json.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Rotativa.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Cors.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Helpers.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Mvc.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Optimization.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Razor.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\WebGrease.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\EntityFramework.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\itextsharp.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Newtonsoft.Json.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Helpers.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Mvc.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Optimization.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.Razor.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\obj\Release\m2ostnextservice.csprojResolveAssemblyReference.cache
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CopyComplete
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+D:\SkillmuniUniversityService\WorkSpace\latest\Latest\m2ostnextservice Version 8.0.20.6.19\m2ostnextservice Version 8.0\skillmuniwebservice\obj\Release\m2ostnextservice.pdb
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll.config
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.pdb
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Cors.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\WebGrease.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.AssemblyReference.cache
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CopyComplete
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+D:\Kishan\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.pdb
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll.config
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.pdb
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Cors.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\WebGrease.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.AssemblyReference.cache
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CopyComplete
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+D:\Raj\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.pdb
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll.config
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.pdb
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Data.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Web.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Cors.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\WebGrease.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Google.Protobuf.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\ZstdNet.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\BouncyCastle.Crypto.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Memory.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Buffers.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Compression.LZ4.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Hash.xxHash.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Numerics.Vectors.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Web.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.AssemblyReference.cache
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CopyComplete
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+C:\Users\User\Downloads\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.pdb
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll.config
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.pdb
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Data.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Web.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Cors.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\WebGrease.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Google.Protobuf.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\ZstdNet.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Compression.LZ4.Streams.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\BouncyCastle.Crypto.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Memory.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Buffers.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Compression.LZ4.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\K4os.Hash.xxHash.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Numerics.Vectors.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Web.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.AssemblyReference.cache
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CopyComplete
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+D:\Project_skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.pdb
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll.config
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\m2ostnextservice.pdb
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Microsoft.Web.Infrastructure.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Data.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Cors.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\WebGrease.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\EntityFramework.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\itextsharp.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\MySql.Web.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Newtonsoft.Json.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Net.Http.Formatting.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.Cors.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Helpers.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Http.WebHost.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Mvc.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Optimization.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.Razor.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Deployment.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\System.Web.WebPages.Razor.xml
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\bin\Antlr3.Runtime.pdb
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.AssemblyReference.cache
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.csproj.CoreCompileInputs.cache
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnex.52E048E7.Up2Date
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.dll
+F:\TCG\Skillmuni\Skillmuni API Project 15-02-2023\Skillmuni API Project\skillmuniwebservice\obj\Release\m2ostnextservice.pdb

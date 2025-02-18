@@ -1,0 +1,211 @@
+﻿
+@{
+    ViewBag.Title = "MyDashboard";
+    Layout = null;
+
+
+    m2ostnextservice.Models.LeaderBoardResponse Leader = (m2ostnextservice.Models.LeaderBoardResponse)ViewData["Leader"];
+    m2ostnextservice.Models.FootballThemeLeaderBoardHeader Header = (m2ostnextservice.Models.FootballThemeLeaderBoardHeader)ViewData["Header"];
+    int uid = (int)ViewData["UID"];
+    int oid = (int)ViewData["OID"];
+
+    List<m2ostnextservice.Models.tbl_badge_master> badgemaster = (List<m2ostnextservice.Models.tbl_badge_master>)ViewData["badgemaster"];
+
+    m2ostnextservice.Models.UserScoreResponse ScoreRes = (m2ostnextservice.Models.UserScoreResponse)ViewData["ScoreRes"];
+
+    string baseurl="https://www.skillmuni.in/SkillmuniUniversityApiBeta/";
+    string rewardsredeemed = "https://www.skillmuni.in/SkillmuniUniversityapiBeta/DashboardWebView/RewardsRedirectPage?UID=";
+    int totalcurrency = (int)ViewData["totalcurrency"];
+
+
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+    <link href="~/Content/WebView/MyDashboard/css/stylesheet.css" rel="stylesheet" />
+    <link href="~/Content/WebView/MyDashboard/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/WebView/MyDashboard/css/SKUL_02.css" rel="stylesheet" />
+    <link href="~/Content/WebView/MyDashboard/css/bootstrap.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="container">
+       <!--  <div class="row">
+            <div class="col-12 col-sm-12"><div class="mydashboard_topspace"></div></div>
+        </div> -->
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="mydashboard_top">
+                    <!-- <i class="fa fa-bars mydashboard_topicon"></i> -->
+                    <span style="font-size:25px; padding-left:10px">MY DASHBOARD</span>
+                </div>
+
+                <!--<ul>
+                    <li><a class="active" href="index.html">MY LEAGUE</a></li>
+                    <li><a href="friends.html">FRIENDS</a></li>
+                    <li><a href="college.html">COLLEGE</a></li>
+                    <li><a href="country.html" class="noboderright">COUNTRY</a></li>
+                </ul>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="mydashboard_mainbox">
+                    <div class="mydashboard_headimg">
+                        @*<img src="images/head.png" width="150">*@
+                        <h6 style="background-color: #ff9734; width: 50%; padding: 1%; font-family: 'bebas_neueregular';">@Leader.userleague</h6>
+
+                    </div>
+                    <div class="row" style="padding-bottom: 30px;">
+                        <div class="col-7 col-sm-7">
+                            <div class="mydashboard_boxleft">
+                                <div class="mydashboard_innerheadbox">BADGES WON</div>
+                                <div class="mydashboard_threeimg">
+                                    <table width="100%">
+                                        <tr>
+                                            @foreach (var itm in badgemaster)
+                                            {
+                                                <td><img src="https://www.skillmuni.in/SkillMuniUniversityCMSBeta/Content/SKILLMUNI_DATA/badge/@itm.badge_logo" width="40"></td>
+
+                                            }
+
+
+                                        </tr>
+                                        <tr>
+                                            @foreach (var item in badgemaster)
+                                            {
+                                                if (item.WonFlag == 1)
+                                                {
+                                                    <td><div class="mydashboard_threeimgnum">@item.eligiblescore</div></td>
+
+
+                                                }
+                                                else
+                                                {
+                                                    <td><div class="mydashboard_threeimgnum">0</div></td>
+
+
+                                                }
+
+                                            }
+
+
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-5 paddingnone">
+                            <div class="mydashboard_smallimgbox">
+                                <div class="mydashboard_smallimgboxinner">
+                                    <img src="@Leader.UserProfileImage" width="84" height="72"><br>
+
+                                </div>
+                                <div class="mydashboard_smallfont">@Leader.UserName</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="orangebox">
+                <ul>
+                    <li><a class="active" onclick="UnreadLayout()"><img src="~/Content/WebView/MyDashboard/images/unreadicon_01.png" width="40" height="40"><br>Unread<br>&nbsp;</a></li>
+                    <li><a href="#"><img src="~/Content/WebView/MyDashboard/images/assessment_01.png" width="40" height="40"><br>Assessment Score</a></li>
+                    <li><a href="@rewardsredeemed@uid"><img src="~/Content/WebView/MyDashboard/images/rewards_01.png" width="40" height="40"><br>Rewards Redeemed</a></li>
+                    <li><a onclick="BookmarkLayout()" class="noboderright"><img src="~/Content/WebView/MyDashboard/images/bookmark_01.png" width="40" height="40"><br>Book Marked</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="orangeandbluebox">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)" tooltips="@ScoreRes.specialmetricscore" class="click active">
+                            <img src="~/Content/WebView/MyDashboard/images/jobsicon_01.png" width="40" height="40"><br>
+
+                            @*<img src="~/Content/WebView/MyDashboard/images/ball_01.png" width="40" height="40"><br>*@
+                            JOB POINTS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" tooltips="@totalcurrency" class="click">
+                            @*<img src="~/Content/WebView/MyDashboard/images/credits_01.png" width="40" height="40"><br>*@
+                            <img src="~/Content/WebView/MyDashboard/images/walleticon_01.png" width="40" height="40"><br>
+
+                            WALLET
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" tooltips="@ScoreRes.currency_value" class="click">
+                            <img src="~/Content/WebView/MyDashboard/images/credits_01.png" width="40" height="40"><br>
+
+                            @*<img src="~/Content/WebView/MyDashboard/images/jobsicon_01.png" width="40" height="40"><br>*@
+                            CREDITS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" tooltips="@ScoreRes.userscore" class="click">
+                            <img src="~/Content/WebView/MyDashboard/images/ball_01.png" width="40" height="40"><br>
+
+                            @*<img src="~/Content/WebView/MyDashboard/images/walleticon_01.png" width="40" height="40"><br>*@
+                            GOALS
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <button type="button" onclick="myacademy()" style="background:url(@baseurl/Content/WebView/MyDashboard/images/scoremorebutton1.png); width:170px; height:47px; border:0px; margin:0 auto; padding:10px 20px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#FFF; outline:none;">SCORE MORE</button>
+        </div>
+
+    </div>
+
+    <!--<div class="container">
+    <div class="row" style="position:fixed; bottom:0px; width:100%;text-align:center; margin:0px; background-color:#3c424e; background-size:contain; height:140px; border-radius:50%; padding:0px; padding-bottom:7px; margin-bottom:-70px; border-top:1px solid #333333;">
+
+            <div class="col-4 col-sm-4" align="right"><a href="#"><img src="images/jobsnew.png" width="40" style="margin-top:15px;"></a></div>
+            <div class="col-4 col-sm-3" align="center"><a href="#"><img src="images/library.png" width="40" style="margin-top:15px;"></a></div>
+            <div class="col-4 col-sm-4" align="left"><a href="#"><img src="images/chat.png" width="40" style="margin-top:15px;"></a></div>
+
+        </div>
+        </div>-->
+
+
+
+
+
+
+
+    <script src="~/Content/WebView/MyDashboard/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    function UnreadLayout() {
+        Android.UnreadLayout();
+    }
+    function BookmarkLayout() {
+        Android.BookmarkLayout();
+    }
+    function myacademy() {
+        Android.myacademytile();
+    }
+</script>
+
+
+
+

@@ -1,0 +1,206 @@
+﻿
+@{
+    ViewBag.Title = "FootballLeaderBoard";
+    Layout = null;
+    m2ostnextservice.Models.LeaderBoardResponse Leader = (m2ostnextservice.Models.LeaderBoardResponse)ViewData["Leader"];
+    m2ostnextservice.Models.FootballThemeLeaderBoardHeader Header = (m2ostnextservice.Models.FootballThemeLeaderBoardHeader)ViewData["Header"];
+    int uid = (int)ViewData["UID"];
+    int oid = (int)ViewData["OID"];
+
+    List<m2ostnextservice.Models.tbl_badge_master> badgemaster = (List<m2ostnextservice.Models.tbl_badge_master>)ViewData["badgemaster"];
+    string gamename = (string)ViewData["gamename"];
+    
+
+}
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Leader Board</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+
+    <link href="~/Content/WebView/css/stylesheet.css" rel="stylesheet" />
+    <link href="~/Content/WebView/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/WebView/css/SKUL.css" rel="stylesheet" />
+    <link href="~/Content/WebView/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    @*<link rel="stylesheet" media="all" href="css/stylesheet.css" />
+        <link rel="stylesheet" media="all" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" media="all" href="css/SKUL.css" />
+        <link rel="stylesheet" media="all" href="css/bootstrap.min.css" />*@
+</head>
+
+<body>
+    <input type="hidden" value="@uid" id="UIDTemp" />
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12"><div class="topspace"></div></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <ul>
+                    <li style="width:33.3%"><a class="active" href="#">MY LEAGUE</a></li>
+                    @*<li><a href="#">FRIENDS</a></li>*@
+                    <li style="width:33.3%"><a href="@Url.Action("FootballLeaderBoardForCollege","DashboardWebView",new { UID=uid,OID=oid})">COLLEGE</a></li>
+                    <li style="width:33.3%"><a href="@Url.Action("FootballLeaderBoardForCountry","DashboardWebView",new { UID=uid,OID=oid})" class="noboderright">COUNTRY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="mainbox">
+                    <div class="headimg">
+                        <h6 style="background-color: #ff9734; width: 50%; padding: 1%; font-family: 'bebas_neueregular';">@Leader.userleague</h6>
+                        @*<img src="~/Content/WebView/images/head.png" width="150">*@
+                    </div>
+                    <div class="row">
+                        <div class="col-7 col-sm-7">
+                            <div class="boxleft">
+                                <div class="innerheadbox">BADGES WON</div>
+                                <div class="threeimg">
+                                    <table width="100%">
+                                        <tr>
+                                            @foreach (var itm in badgemaster)
+                                            {
+                                                <td><img src="https://www.skillmuni.in/SkillMuniUniversityCMSBeta/Content/SKILLMUNI_DATA/badge/@itm.badge_logo" width="40"></td>
+
+                                            }
+
+
+
+                                            @*<td><img src="~/Content/WebView/images/defender.png" width="40"></td>
+                                                <td><img src="~/Content/WebView/images/defender.png" width="40"></td>*@
+                                        </tr>
+                                        <tr>
+                                            @foreach (var item in badgemaster)
+                                            {
+                                                if (item.WonFlag == 1)
+                                                {
+                                                    <td><div class="threeimgnum">@item.eligiblescore</div></td>
+
+
+                                                }
+                                                else
+                                                {
+                                                    <td><div class="threeimgnum">0</div></td>
+
+
+                                                }
+
+
+
+                                            }
+                                            @*@foreach (var item in Leader.Badge)
+                                                {
+                                                    <td><div class="threeimgnum">@item.eligible_score</div></td>
+
+
+                                                }*@
+
+
+
+
+
+                                            @*<td><div class="threeimgnum">10</div></td>*@
+                                            @*<td><div class="threeimgnum">9</div></td>
+                                                <td><div class="threeimgnum">50</div></td>*@
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5 col-sm-5 paddingnone">
+                            <div class="smallimgbox">
+                                <div class="smallimgboxinner">
+                                    <img src="@Leader.UserProfileImage" width="82" height="72"><br>
+
+                                </div><span class="smallfont">@Leader.UserName</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="bodytable">
+                    <table width="100%">
+                        <tr>
+                            <td>&nbsp; RANK</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            @*<td align="center" width="50">@Header.specialmetric</td>*@
+                            <td align="center" width="50"><img src="~/Content/WebView/images/jobpoint.png" width="28" height="28"></td>
+
+                            <td align="center" width="45"><img /> <img src="@Header.currency_image" width="28" height="28"></td>
+                            <td align="center" width="70"><img src="~/Content/WebView/images/football.png" width="27"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="apndbrd" class="bodytableinner">
+
+                    <div id="loading-gif" class="preload">
+                        <img style="padding-left: 17%;" src="https://www.phonemoore.com/wp-content/uploads/2017/05/load-indicator.gif">
+                    </div>
+                  
+
+                </div>
+            </div>
+        </div>
+        <!-- Bottom Menu Bar Already Comment - Already its avalible in Native Screen
+        <div class="row" style="position:fixed; bottom:0px; width:100%;text-align:center; margin:0px; background-color:#3c424e; background-size:contain; height:140px; border-radius:50%; padding:0px; padding-bottom:7px; margin-bottom:-70px; border-top:1px solid #333333;">
+
+            <div class="col-4 col-sm-4" align="right"><a href="#"><img src="images/jobsnew.png" width="40" style="margin-top:15px;"></a></div>
+            <div class="col-4 col-sm-3" align="center"><a href="#"><img src="images/library.png" width="40" style="margin-top:15px;"></a></div>
+            <div class="col-4 col-sm-4" align="left"><a href="#"><img src="images/chat.png" width="40" style="margin-top:15px;"></a></div
+        </div> -->
+    </div>
+</body>
+</html>
+<script>
+
+    $(window).ready(function () {
+
+        // $("#loading-gif").removeClass('disp_none');
+        //$("#loading-gif").addClass('disp_block');
+
+        //$("#tPreview").attr("href", "http://103.7.64.68/m2ostbeta/Content/Theme/t" + val + ".jpg");
+        //$("#preview-anchor").attr("href", "http://103.7.64.68/m2ostbeta/Content/Theme/t" + val + ".jpg");
+        //$("#preview-div").attr("src", "http://103.7.64.68/m2ostbeta/Content/Theme/t" + val + ".jpg");
+
+        var UIDTemp = $("#UIDTemp").val();
+
+        var link = "http://localhost:7505/DashboardWebView/FootballLeaderboardPartialView?UID=" + UIDTemp + "&OID=130";
+        // link = link.replace("action", "FootballLeaderboardPartialView");
+        // //link = link.replace("control", "");
+        // link = link.replace("control", "DashboardWebView");
+        //// link = link.replace("-1", 2541);
+
+        //$("#loading-gif").show();
+        // $("#apndbrd").hide();
+        $("#loading-gif").show();
+        $.get(link, null, function (data) {
+
+            //$("#div-theme-body").show();
+
+            $("#apndbrd").empty().append(data);
+            $("#loading-gif").hide();
+
+            //$("#loading-gif").removeClass('disp_block');
+
+            //$("#loading-gif").addClass('disp_none');
+
+
+        });
+    });
+
+</script>
+
+
+
+

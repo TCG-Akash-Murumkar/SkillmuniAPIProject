@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "FormSub";
+    Layout = null;
+}
+
+@using (Html.BeginForm("Loginaction", "DashboardWebView", FormMethod.Post))
+{
+<input type="text" name="uid" />
+<input type="password" name="pswd" />
+<button type="submit">Login</button>
+
+}
+

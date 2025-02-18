@@ -1,0 +1,309 @@
+﻿
+@{
+    ViewBag.Title = "RewardsRedirectPage";
+    Layout = null;
+    List<m2ostnextservice.Models.CouponsRedeemed> cpn = (List<m2ostnextservice.Models.CouponsRedeemed>)ViewData["cpn"];
+
+}
+
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Untitled Document</title>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
+
+    <link href="~/Content/WebView/Rewards/css/stylesheet.css" rel="stylesheet" />
+    <link href="~/Content/WebView/Rewards/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/WebView/Rewards/css/bootstrap.min.css" rel="stylesheet" />
+
+
+
+
+    <style>
+        body {
+            background: url('../../Content/WebView/Rewards/images/mainbg1.png') top center fixed;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: "Rockwell Extra Bold", Rockwell, "Rockwell Condensed";
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 0px !important;
+            padding-left: 0px !important;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .rewards_top {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            background: #666;
+            font-weight: bold;
+            color: #FFF;
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px;
+            float: left;
+            font-size: 22px;
+        }
+
+        .rewards_filter {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            color: #FFF;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            .rewards_filter select option {
+                font-weight: 400 !important;
+                display: block;
+                white-space: normal !important;
+                min-height: 1.2em !important;
+                padding: 2px !important;
+            }
+
+        .rewards_body {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            color: #FFF;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 10px;
+            height: 87%;
+            overflow: auto;
+        }
+
+        .rewards_footer {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            border: 0px;
+            color: #FFF;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .rewards_badgecount {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .rewards_maintable {
+            width: 94%;
+            margin: 0 auto !important;
+            margin-top: 10px !important;
+        }
+
+        .rewards_subtable {
+            width: 100%;
+            background: url('../../Content/WebView/Rewards/images/rewards_bg.png') repeat;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        td.rewards_subtabletd {
+            padding: 20px 10px;
+            text-align: left;
+            color: #000;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12">
+                <div class="rewards_top">
+                    Coupons
+                    @*<span style="text-align:right; float:right; font-size:14px; margin-right:5px;">@TotalCurrency <img src="~/Content/WebView/Rewards/images/rupee.png" width="30"></span>*@
+                </div>
+            </div>
+            <div class="col-12 col-sm-12">
+                @*<div class="rewards_filter">
+                        Filter rewards by
+                        <select>
+                            <option>Year</option>
+                            <option>2000</option>
+                            <option>2001</option>
+                            <option>2002</option>
+                        </select>
+
+                    </div>*@
+            </div>
+            <div class="col-12 col-sm-12">
+                <div class="rewards_body">
+                    @foreach (var itm in cpn)
+                    {
+                       
+                            <table class="rewards_maintable">
+                                <tr>
+                                  
+                                    <td>
+                                        <div class="rewards_box">
+                                            <table class="rewards_subtable">
+                                                <tr>
+                                                    <td class="rewards_subtabletd">
+                                                        <img src="@itm.Image" style="width: 100%;">
+                                                        <br />
+                                                        @itm.CouponDescription
+                                                        <br />
+                                                        Coupon-@itm.CouponCode | Expiry Date-@itm.ExpiryDate
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        
+
+                    }
+                    @if (cpn.Count == 0)
+                    {
+                        <h3>No Coupons Available</h3>
+                    }
+
+                    @*<table class="rewards_maintable">
+                            <tr>
+                                <td style="padding-right:10px;"><img src="~/Content/WebView/Rewards/images/defender.png" width="80"></td>
+                                <td>
+                                    <div class="rewards_box">
+                                        <table class="rewards_subtable">
+                                            <tr>
+                                                <td class="rewards_subtabletd">
+                                                    You earned this badge
+                                                    on 18th January. 2019
+                                                </td>
+                                                <td style="padding:10px;">
+                                                    <img src="~/Content/WebView/Rewards/images/rupee.png" width="20"><br><span class="rewards_badgecount">500</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+
+                        <table class="rewards_maintable">
+                            <tr>
+                                <td style="padding-right:10px;"><img src="~/Content/WebView/Rewards/images/defender.png" width="80"></td>
+                                <td>
+                                    <div class="rewards_box">
+                                        <table class="rewards_subtable">
+                                            <tr>
+                                                <td class="rewards_subtabletd">
+                                                    You earned this badge
+                                                    on 18th January. 2019
+                                                </td>
+                                                <td style="padding:10px;">
+                                                    <img src="~/Content/WebView/Rewards/images/rupee.png" width="20"><br><span class="rewards_badgecount">500</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="rewards_maintable">
+                            <tr>
+                                <td style="padding-right:10px;"><img src="~/Content/WebView/Rewards/images/defender.png" width="80"></td>
+                                <td>
+                                    <div class="rewards_box">
+                                        <table class="rewards_subtable">
+                                            <tr>
+                                                <td class="rewards_subtabletd">
+                                                    You earned this badge
+                                                    on 18th January. 2019
+                                                </td>
+                                                <td style="padding:10px;">
+                                                    <img src="~/Content/WebView/Rewards/images/rupee.png" width="20"><br><span class="rewards_badgecount">500</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="rewards_maintable">
+                            <tr>
+                                <td style="padding-right:10px;"><img src="~/Content/WebView/Rewards/images/defender.png" width="80"></td>
+                                <td>
+                                    <div class="rewards_box">
+                                        <table class="rewards_subtable">
+                                            <tr>
+                                                <td class="rewards_subtabletd">
+                                                    You earned this badge
+                                                    on 18th January. 2019
+                                                </td>
+                                                <td style="padding:10px;">
+                                                    <img src="~/Content/WebView/Rewards/images/rupee.png" width="20"><br><span class="rewards_badgecount">500</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <table class="rewards_maintable">
+                            <tr>
+                                <td style="padding-right:10px;"><img src="~/Content/WebView/Rewards/images/defender.png" width="80"></td>
+                                <td>
+                                    <div class="rewards_box">
+                                        <table class="rewards_subtable">
+                                            <tr>
+                                                <td class="rewards_subtabletd">
+                                                    You earned this badge
+                                                    on 18th January. 2019
+                                                </td>
+                                                <td style="padding:10px;">
+                                                    <img src="~/Content/WebView/Rewards/images/rupee.png" width="20"><br><span class="rewards_badgecount">500</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>*@
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="~/Content/WebView/Rewards/js/bootstrap.min.js"></script>
+</body>
+</html>
+
